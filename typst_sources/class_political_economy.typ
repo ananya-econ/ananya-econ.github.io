@@ -1,361 +1,157 @@
 #set document(
-  title: "Theory of Class and Political Economy: Reassessing Structural Formations and Labour Processes in Developing Economies",
+  title: "Assignment: CLASS",
   author: "Ananya Pradhan",
-  date: auto
+  date: none
 )
 
 #set page(
   paper: "a4",
-  margin: (top: 2.4cm, bottom: 2.4cm, left: 2.6cm, right: 2.6cm),
+  margin: (top: 3cm, bottom: 3cm, left: 3cm, right: 3cm),
   header: context {
     if counter(page).get().first() > 1 [
       #grid(
         columns: (1fr, auto),
         align: (left, right),
-        text(size: 8.5pt, fill: rgb("#6b7280"), font: "Libertinus Serif", style: "italic")[Ananya Pradhan · Theory of Class & Political Economy],
-        text(size: 8pt, fill: rgb("#6b7280"), font: "Menlo")[CISLS / CIPOD · JNU]
+        text(size: 8.5pt, fill: rgb("#6b7280"), font: "Libertinus Serif", style: "italic")[Ananya Pradhan · Course: Political Economy (IA-416)],
+        text(size: 8.5pt, fill: rgb("#6b7280"), font: "Libertinus Serif")[Assignment: 'CLASS']
       )
-      #v(0.15em)
+      #v(0.2em)
       #line(length: 100%, stroke: 0.4pt + rgb("#d1d5db"))
     ]
   },
   footer: context {
-    grid(
-      columns: (1fr, auto),
-      align: (left, right),
-      text(size: 8pt, fill: rgb("#9ca3af"), font: "Libertinus Serif")[Working Paper · Political Economy Series],
-      text(size: 8pt, fill: rgb("#4b5563"), font: "Menlo")[
-        #counter(page).display("1 of 1", both: true)
+    align(center)[
+      #text(size: 9pt, fill: rgb("#6b7280"), font: "Libertinus Serif")[
+        #counter(page).display("1")
       ]
-    )
+    ]
   }
 )
 
 #set text(
   font: "Libertinus Serif",
-  size: 10.5pt,
-  fill: rgb("#1c1917"),
+  size: 11pt,
+  fill: rgb("#111827"),
   lang: "en"
 )
 
 #set par(
   justify: true,
-  leading: 0.68em,
-  first-line-indent: 1.4em
+  leading: 0.78em,
+  first-line-indent: 1.5em
 )
 
-// --- TITLE BLOCK ---
+// --- HEADER BLOCK ---
 #align(center)[
+  #text(size: 10pt, weight: "bold", font: "Libertinus Serif")[Course: Political Economy (IA-416)] \
   #v(0.2cm)
-  #text(size: 8pt, font: "Menlo", tracking: 0.14em, fill: rgb("#4b5563"))[
-    JAWAHARLAL NEHRU UNIVERSITY · NEW DELHI
-  ]
+  #text(size: 11pt, font: "Libertinus Serif", style: "italic")[Assignment topic:] \
+  #v(0.1cm)
+  #text(size: 18pt, weight: "bold", font: "Libertinus Serif")[‘CLASS’] \
+  #v(0.5cm)
   
-  #v(0.15cm)
-  #text(size: 8.5pt, font: "Libertinus Serif", style: "italic", fill: rgb("#6b7280"))[
-    Centre for Informal Sector and Labour Studies (CISLS) & Centre for International Politics, Organization and Disarmament (CIPOD)
-  ]
-  
-  #v(0.4cm)
-  #text(size: 18pt, weight: "bold", font: "Libertinus Serif", fill: rgb("#111827"))[
-    Theory of Class and Political Economy
-  ]
-  
-  #v(0.15cm)
-  #text(size: 11pt, font: "Libertinus Serif", style: "italic", fill: rgb("#374151"))[
-    Reassessing Structural Formations, Transnational Capital, and Labour Processes in Developing Economies
-  ]
-  
-  #v(0.35cm)
-  #line(length: 30%, stroke: 0.75pt + rgb("#9ca3af"))
-  #v(0.25cm)
-  
-  #text(size: 11pt, weight: "bold", fill: rgb("#111827"))[Ananya Pradhan]
-  
-  #v(0.08cm)
-  #text(size: 8.8pt, fill: rgb("#4b5563"))[
-    Centre for Informal Sector and Labour Studies, School of Social Sciences \
-    Jawaharlal Nehru University, New Delhi \
-    Email: #link("mailto:pradhan.ananya1994@gmail.com")[pradhan.ananya1994\@gmail.com]
-  ]
-  
-  #v(0.15cm)
-  #text(size: 8.2pt, fill: rgb("#6b7280"), style: "italic")[
-    Course: Political Economy (IA-416) · Submitted to: Prof. Moushumi Basu
-  ]
-  
-  #v(0.35cm)
-]
-
-// --- ABSTRACT BLOCK ---
-#align(center)[
-  #block(
-    width: 95%,
-    fill: rgb("#f9fafb"),
-    inset: (x: 16pt, y: 12pt),
-    stroke: (left: 2.5pt + rgb("#1e3a8a"), rest: 0.5pt + rgb("#e5e7eb")),
-    radius: (right: 3pt)
-  )[
-    #align(left)[
-      #text(weight: "bold", size: 8.5pt, font: "Menlo", fill: rgb("#1e3a8a"))[ABSTRACT]
-      
-      #v(0.15cm)
-      #set text(size: 8.8pt, fill: rgb("#374151"))
-      #set par(justify: true, first-line-indent: 0pt, leading: 0.62em)
-      This paper examines the theoretical foundations and contemporary mutations of the "theory of class" within Marxist and heterodox political economy. Tracing the trajectory of class differentiation from primitive accumulation and the dissolution of primeval agrarian communities to contemporary financialised globalisation, the study interrogates how the relational conception of class operates under neoliberal capitalism. We demonstrate that the contemporary global order is governed by an unprecedented concentration of capital—exemplified by an international financial oligarchy and a Transnational Capitalist Class (TCC) coordinating multi-tiered Global Value Chains (GVCs) and Global Production Networks (GPNs). Under the discipline of mobile global finance, the retreat of state-mediated social protection and agrarian support has catalysed massive structural informalisation across developing nations. Rather than transitioning surplus agricultural labour into secure, formal industrial employment, contemporary accumulation systematically produces a vulnerable, fragmented labour force—frequently conceptualised as the "precariat"—characterised by wage suppression, absence of collective bargaining, and occupational hazards. Finally, the paper reassesses the intermediary position of the modern managerial and intellectual "middle class," concluding that the fundamental structural antagonism between capital and labour persists with renewed virulence in the 21st-century Global South.
-      
-      #v(0.25cm)
-      #text(weight: "bold", size: 8.2pt, fill: rgb("#111827"))[JEL Classification: ]
-      #text(size: 8.2pt, font: "Menlo", fill: rgb("#4b5563"))[B51, P16, F23, J46, J81, Z13] \
-      #text(weight: "bold", size: 8.2pt, fill: rgb("#111827"))[Keywords: ]
-      #text(size: 8.2pt, style: "italic", fill: rgb("#4b5563"))[Marxist Political Economy, Relational Class, Primitive Accumulation, Transnational Capital, Global Value Chains, Informalisation, Precariat, Developing Economies]
+  #grid(
+    columns: (1fr, 1fr),
+    align: (left, right),
+    [
+      #text(size: 9.5pt)[
+        *Submitted to:* \
+        Moushumi Basu \
+        CIPOD, SIS/JNU
+      ]
+    ],
+    [
+      #text(size: 9.5pt)[
+        *Submitted by:* \
+        Ananya Pradhan \
+        Registration no: 56898 \
+        M.A 4th Semester \
+        CISLS, SSS/JNU
+      ]
     ]
-  ]
+  )
+  
+  #v(0.3cm)
+  #line(length: 100%, stroke: 0.5pt + rgb("#9ca3af"))
+  #v(0.4cm)
 ]
 
-#v(0.3cm)
-
-// --- SECTION STYLING ---
 #show heading.where(level: 1): it => block(
-  above: 0.9cm, below: 0.35cm
+  above: 1.2cm, below: 0.5cm
 )[
-  #text(size: 12pt, weight: "bold", fill: rgb("#111827"), font: "Libertinus Serif")[
-    #counter(heading).display() #h(0.35em) #it.body
-  ]
-  #v(0.08cm)
-  #line(length: 100%, stroke: 0.5pt + rgb("#e5e7eb"))
+  #text(size: 13pt, weight: "bold", fill: rgb("#111827"), font: "Libertinus Serif")[#it.body]
 ]
 
-#show heading.where(level: 2): it => block(
-  above: 0.7cm, below: 0.25cm
-)[
-  #text(size: 10.5pt, weight: "bold", fill: rgb("#1f2937"), font: "Libertinus Serif")[
-    #counter(heading).display() #h(0.3em) #it.body
-  ]
-]
+= Introduction:
 
-#set heading(numbering: "1.1")
-
-= Introduction: The Relational Conception of Class
-
-Karl Marx constitutes the primary architect of the structural "theory of class," alongside classical sociological formulations advanced by Max Weber and Émile Durkheim. However, Marx's analytical formulation diverges categorically from Weberian distributional stratification or Durkheimian functional integration. The Marxist conception of class is fundamentally *relational* and *antagonistic* (Wright, 2009). Rather than categorising individuals according to gradational gradations of income, occupational prestige, or consumption status, classical Marxist political economy divides capitalist society into structural groups defined strictly by their relation to the *means of production* (Marx, 1867/2018).
-
-In a capitalist social formation, this structural polarity separates society into two primary contending classes:
-1. *The Bourgeoisie:* The class of modern capitalists who monopolise ownership of the social means of production and purchase wage labour to extract surplus value.
-2. *The Proletariat:* The class of modern wage labourers who, possessing no means of production of their own, are legally free yet structurally compelled to sell their labour power as a commodity in order to subsist.
-
-The decisive determinant of this structural divide is *private property* and *ownership* over the conditions of labour. This social organisation did not emerge spontaneously or ex nihilo; rather, it is the culminated product of an extended historical process. With the progressive dissolution of primeval communal modes of subsistence, society began differentiating into distinct, antagonistic classes (Morgan, 1877; Engels, 1884). As Marx and Engels famously postulated in the *Manifesto of the Communist Party* (1848):
+Karl Marx is one of the main contributors to the 'Theory of class'. The other contributors are Weber and Durkheim. However, Marx's definition of class is different from that of Weber's and Durkheim's. The Marxist conception of 'class' is relational#footnote[Wright, E. O. (2009). Understanding class: Towards an integrated analytical approach. *New Left Review*, 60(1), 101–116.]. The classical Marxist definition of class divides the 'Capitalist'#footnote[The capitalistic society has some basic features; self-expanding market, capitalistic mode of production, a system of unfettered individual enterprise etc.] society in to two groups, one group which owns the 'means of production' and the other who does not own anything except their 'labour power'. He explains this division of society is based on the relation of two groups in a specific mode of production in a given society. The peculiar factor behind this distinction of two groups in the society is 'ownership' or 'private property'. The word 'Bourgeoisie' means the class of modern capitalists, owners of the social production and employer of wage labour. In other hand 'Proletariat' is a class of modern wage labourers, who does not have their own means of production and sell their labour power in order to live. This social organisation existed previous to the recorded History or in the primitive form of the society. Marx further deepens his argument by saying this process or division in the society is a historical process. With the dissolution of the primeval communities, society begins to be differentiated into separate and finally antagonistic classes#footnote[Morgan, L. H. (1877). *Ancient Society: Or, Researches in the Lines of Human Progress from Savagery, through Barbarism to Civilization*. H. Holt.]. Friedrich Engels tried to retrace this dissolution in his work 'The origin of Family, Private property and the state' (1888). Marx's theory of 'primitive accumulation' substantiates this claim. The political pamphlet of the communist party; the 'communist manifesto' writes the same,
 
 #align(center)[
   #block(
     width: 90%,
-    inset: (left: 12pt, y: 3pt),
+    inset: (left: 12pt, y: 2pt),
     stroke: (left: 2pt + rgb("#9ca3af"))
   )[
-    #set text(size: 9.2pt, style: "italic", fill: rgb("#374151"))
-    "The history of all hitherto existing society is the history of class struggles. Freeman and slave, patrician and plebeian, lord and serf, guild-master and journeyman, in a word, oppressor and oppressed, stood in constant opposition to one another, carried on an uninterrupted, now hidden, now open fight..." (Marx & Engels, 1848/1888, p. 9).
+    #set text(size: 10pt, style: "italic", fill: rgb("#374151"))
+    #set par(first-line-indent: 0pt)
+    "The history of all hitherto existing society is the history of class struggles" (Communist Manifesto, 1848).
   ]
 ]
 
-The historical enclosure movement in England exemplifies this structural separation, wherein common lands were forcibly converted into private property, expropriating the rural peasantry and creating a detached, propertyless urban proletariat. However, under contemporary globalisation, the concrete institutional forms, spatial configurations, and reproductive circuits of these classes have undergone profound structural restructuring. 
+The enclosure movement in England can be an example of that as it made few people owner of the common land and a large chunk of the English society remained land-less. However, the forms and relationship between these two classes have changed relatively with the new capitalistic dynamisms. This paper aims to study the existence of class and the changes happened to its form and meaning in the Globalisation era. Political economy is used as a frame work to analyse the concept of 'Class' by using the production relations in the contemporary world.
 
-This paper investigates the reality of class and the mutations in its meaning within the contemporary global economy. Utilising Marxist political economy as an analytical framework, we evaluate the production relations, financial circuits, and labour control regimes governing the contemporary Global South.
+= Origin of class:
 
-= Historical Origin and Modes of Production
+The term 'capitalism' has been used by economists in a purely technical sense. However, this paper is looking at it as a category of 'historical interpretation' to trace the origin of class. The presence of different complicated social orders in different societies across time is not a natural process. The social orders have always been results of the particular historical process.
 
-While neoclassical economics employs "capitalism" in a narrowly technical sense—identifying it with market exchange, price mechanisms, or physical capital equipment—Marxist political economy approaches capitalism as a distinct historical mode of production rooted in specific social relations of exploitation. 
+Engels (1884) argues the advent of agriculture and domestication of animal provided the human beings to create more than the bare minimum that they needed to survive. This accumulation of capital in the pre-class hunter-gatherer societies created grounds for formation of 'class'. Two classes came into existence, one of those 'who accumulated wealth' and another 'who did not'. The formation of class came with inequality. The rise in inequality resulted into rise of private property. The private property helped the men to get control over the sphere of production. The later Marxist scholars take up the issue from the ancient world history to the mediaeval history on the basis of Engels argument. Perry Anderson (1974) explained the evolution of slave-societies of Antiquity to feudalistic societies in mediaeval period on the basis of control over the production process by altering the mode of production to feudal mode of production. Then the feudalistic societies evolved into the capitalist societies by altering the 'mode of production' in early modern period of history (Hilton, 1946).
 
-The emergence of hierarchical social orders across human history is neither biological nor accidental; social structures are the direct consequence of historically contingent transformations in the material mode of production. As Engels (1884) demonstrated in *The Origin of the Family, Private Property and the State*, the historical advent of sedentary agriculture and animal domestication generated material output exceeding the bare subsistence requirements of pre-class hunter-gatherer bands. This generation of an *economic surplus* created the material precondition for institutionalised accumulation and class stratification:
+Therefore, the classical Marxist division of the society in two classes exist on the basis of different 'modes of production' e.g. the slaves and the slave-owners in 'slave mode of production' in Ancient Roman cities, the serfs and the feudal lords in 'Feudalistic mode of production' in the medieval period, and the labourers and capitalists in 'capitalist mode of production' in the present era. The control over the mode of production came into the hand of a particular class through the process explained in the above paragraph. It is a complete historical process starting with the 'primitive accumulation' and 'origin of private property' to present day capitalism.
 
-#align(center)[
-  #block(
-    width: 92%,
-    fill: rgb("#f8fafc"),
-    inset: (x: 14pt, y: 9pt),
-    stroke: 0.5pt + rgb("#cbd5e1"),
-    radius: 3pt
-  )[
-    #align(center)[
-      #text(size: 9pt, weight: "bold", fill: rgb("#0f172a"))[The Historical Dialectic of Class Formation] \
-      #v(0.12cm)
-      #text(size: 8.5pt, font: "Libertinus Serif", fill: rgb("#334155"))[
-        *Economic Surplus* #h(0.4em) $arrow.r$ #h(0.4em) *Private Accumulation* #h(0.4em) $arrow.r$ #h(0.4em) *Origin of Private Property* #h(0.4em) $arrow.r$ #h(0.4em) *Class Stratification*
-      ]
-    ]
-  ]
-]
+= Class in Contemporary Era of Capitalism:
 
-The appropriation of surplus by an emerging elite produced systemic inequality, which crystallized into institutional private property. Control over private property enabled dominant strata to command the sphere of production, reducing subordinate populations to dependent labour. 
+The contemporary capitalism is different in its process of accumulation and operation than the typical of the old capitalism. Operation of free market and international exchange are characteristic features of capitalism. Monopolisation of resources and trade are other important features of capitalism. However the capitalist system of early twentieth century witnessed a different stage of capitalism with formation of a new type of monopoly. Lenin described this new phase as 'Imperialism'#footnote[Lenin, V. I. (1999). *Imperialism: The Highest Stage of Capitalism*. Resistance Books, pp. 70–77.]. In this new phase in early twentieth century, it is observed that with centralisation of capital led to formation of new monopoly in industry and banks. In these two spheres the capitals came together and formed 'financial capital'. The financial capital was controlled by financial oligarchy and they dominated both these spheres as well as the state in advanced countries. The competition among the rival financial capitals made them to increase the mobility of finance across the globe. This brought a new economic entity i.e. the 'international financial capital'. This 'international financial capital' is the main driving force behind the current globalization process. However, the financial capital of Lenin's time had its base with particular nation and linked with the particular nation's expansion of economic territory. But the contemporary financial capital is not tied to any particular national interest although it has its origin in particular nations. Multinational corporations (MNCs) or Trans-national companies are the examples of the 'international financial capital'. However the global financial oligarchy requires an army of spokes persons, media persons, bureaucrats, politicians, professors and think tanks situated globally for its functioning (Pattnaik, 2010). And there are international institutions to help it operate smoothly through providing provisions for un-restricted capital flow globally. These constitute the 'global financial community' and their function is to promote hegemony of international finance. This global financial community penetrates into the political systems of different countries. The IMF and World Bank-trained 'advisors' enter into the economic ministries to promote the hegemony of the particular community. And the penetration of global financial capital makes the state less autonomous. The process of privatiziation and commodification of education facilitate to propagate the views of the global financial community. This 'global financial community' is the new 'trans-national capitalist class' in the contemporary era based on neo-liberal principles.
 
-Subsequent Marxist historiography retraces this dialectic across historical epochs. Perry Anderson (1974) documented how the crisis of the slave-based mode of production in classical Antiquity laid the institutional foundation for the feudal mode of production across medieval Europe, where feudal lords exercised extra-economic coercion over bonded serfs tied to the land. Subsequently, the internal contradictions and agrarian crises of feudalism in early modern Europe catalyzed the transition to capitalism (Hilton, 1976; Dobb, 1946). 
+The rolling back of state (or limiting the intervention of the state) in promoting demand, generating employment, supporting and protecting peasants and petty producers under the neo-liberal principles, creates grounds for the trans-national corporates to accumulate through encroachment and dispossession. The multinational corporations function globally through vertical and horizontal integration of domestic finance with the global capital. This process is called the Global Production Network (GPN) or Global Value Chain (GVC). Multinational retail chains like Walmart and Diageo come up to displace petty commodity traders, squeeze the peasantry, land grabbing and displace people from their lands. Withdrawal of state subsidies and protection on world commodity prices result into high commodity price trends. There is increase in cost of living due to privatization of education, health and several essential services. The global capital is concentrating in to fewer and fewer hands. The Oxfam report on food and beverage companies shows, the ten multinational conglomerates control all of the food and beverage 'brands' we know and these ten companies collectively generate revenues of more than USD 1.1 billion a day#footnote[Oxfam's report (2016), "Behind the Brands: Food justice and the 'Big 10' food and beverage companies".]. These are namely, Associated British Foods, Coca-cola, Danone, General Mills, Kellogg, Mars, Mondelez International, Nestle, PepsiCo and Unilever. Among world's top 100 economic entities, 39 are countries and 61 are corporates (World Bank, 2015). The World Bank report found out that global wealth grew an estimated 66% (From USD 690 trillion to USD 1,143 trillion in constant 2014 USD at market price) but inequality was substantial, as wealth per capita in high-income OECD countries was 52 times greater than in low-income countries (between 1995–2014)#footnote[Report "The Changing Wealth of Nations 2018", Building a sustainable future, World Bank Group.]. With the centralisation of capital in to hands of few trans-national corporates comes the huge inequality.
 
-Consequently, the Marxist paradigm delineates classes across distinct historical *modes of production*:
-- *Ancient / Slave Mode:* Masters versus enslaved labourers.
-- *Feudal Mode:* Feudal nobility / landowning lords versus bonded serfs and unfree tenants.
-- *Capitalist Mode:* Industrial and financial capitalists versus propertyless wage labourers.
+All these together are affecting the working class. The problems created by this global process i.e. distress, dispossession and unemployment in developing countries are transforming the working class or proletariats into a new class. The expansion of these multinational corporations is not contributing to the proportionate employment generation with the total output production. There are other impacts of this process on small-scale farmers, women, farm workers, water, land, climate etc. which can't be ignored. All these peculiarities attached to the neo-liberal regime or Lenin's third stage of Imperialism, are adding new form of vulnerabilities to the working class. The working class under trans-national capitalism are facing reduction in their bargaining power and social security, with the introduction of huge 'informalisation' of works as a result of decline in employment creation in it (Anner, M, 2015). Scholars like Guy Standing (2013) named this new class as 'Pricariates' or 'precarious proletariats' on the basis of the precarious nature of the jobs the proletariats are doing under trans-national capitalists. However, the 'pricariate' is a class or not is a debateable issue. But the problem of 'informalisation' is no doubt a new feature to the contemporary process of globalization, which makes the conditions of the working class more vulnerable comparing to that of the classical Marxist working class.
 
-In each epoch, control over the conditions of production was wrested through protracted historical mechanisms of *primitive accumulation* (*ursprüngliche Akkumulation*)—the violent separation of producers from their independent means of production and subsistence.
+There is another class which does not come under the two classical classes of Marxism. That is called the 'middle-class'. The classical Marxist theory implies them as the obstacle to working class struggle. This class does not assimilate itself to the working class although it also suffers by the 'Bourgeoisie' activities. In classical Marxism the middle-class meant the small productions; the small business men and farmers (Kautsky, 1910). The contemporary middle-class consists of those own a fraction of the 'means of production' in form of power of decision making. The managers, the salaried employees of companies', and the intellectuals, think tanks, advisors etc. who are given ownership of some means of production to propagate the capitalist interest, are the new middle-class. The critics of neo-liberal order consider this as a hierarchal order in the society maintained by the capitalists to ensure that the middle-class would never come in solidarity with the working class.
 
-= Class in the Contemporary Era: Financialisation and Monopolisation
+The cloths we wear, the foods that we eat, the cosmetics we use, mobile phones, laptops, electronic gadgets, automobiles, mobile networks, fancy restaurants, even different farm produces everything is a part of the chain we call global value chain controlled by the trans-national capitalist class. The hawkers, rickshaw-pullers, construction workers, household helps are all part of the working class who have nothing else than their labour power to sale. There is presence of these classes in every sphere of the society. Hence, the conflict between capital and labour continues.
 
-Contemporary capitalism differs fundamentally in its operational mechanisms, accumulation strategies, and regulatory architecture from nineteenth-century competitive industrial capitalism. While free market competition and cross-border commercial exchange characterized early capitalism, competitive dynamics inherently generate concentration and centralisation of capital.
+#v(0.6cm)
+#line(length: 100%, stroke: 0.4pt + rgb("#d1d5db"))
 
-By the early twentieth century, capitalism transitioned into a qualitatively distinct monopoly phase. V. I. Lenin (1917/1999) characterized this epoch as *Imperialism: The Highest Stage of Capitalism*. Lenin demonstrated that the extreme centralisation of industrial production merged with banking capital to forge a new economic power: *finance capital*, commanded by a narrow financial oligarchy. Competition among rival imperial nation-states for exclusive resource enclaves, colonial captive markets, and territorial spheres of influence culminated in inter-imperialist warfare.
+= References:
 
-However, as political economists like Prabhat Patnaik (2010) observe, contemporary finance capital exhibits crucial differences from the national finance capital of Lenin's epoch:
+#set text(size: 9.5pt)
+#set par(justify: true, first-line-indent: -1.5em, hanging-indent: 1.5em, leading: 0.6em)
 
-#figure(
-  caption: [Structural Comparison of Finance Capital Across Historical Epochs],
-  supplement: [Table],
-  block(
-    breakable: false,
-    table(
-      columns: (1.1fr, 1.3fr, 1.4fr),
-      fill: (col, row) => if row == 0 { rgb("#f1f5f9") } else if calc.even(row) { rgb("#f8fafc") } else { none },
-      stroke: 0.4pt + rgb("#cbd5e1"),
-      inset: 6pt,
-      align: (left, left, left),
-      table.header(
-        [*Dimension*],
-        [*Lenin's Era (Early 20th C.)*],
-        [*Contemporary Globalisation (21st C.)*]
-      ),
-      [Spatial Orientation], [Nationally based, state-aligned], [Globalised, transnational mobility],
-      [Inter-Capitalist Dynamics], [Rivalry among distinct national blocs], [Unified hegemony of international finance],
-      [Operational Terrain], [Direct colonial territorial annexation], [Market discipline, structural adjustment, GVCs],
-      [State Relationship], [State acts as patron of national capital], [Rollback of sovereign state economic autonomy]
-    )
-  )
-)
-
-Contemporary finance capital is *international* and hyper-mobile. Rather than being tied to the territorial ambitions of a specific imperial nation, it flows fluidly across global financial circuits, seeking short-term speculative yields and compelling sovereign governments to enforce austerity, fiscal discipline, and investor-friendly deregulation. 
-
-Operating this global architecture requires an extensive apparatus of institutional legitimacy and technical governance. As Patnaik (2010) highlights, the global financial oligarchy commands a vast international cadre of spokespersons, corporate media conglomerates, technocrats, legal architects, and economists. International financial institutions (IFIs)—principally the International Monetary Fund (IMF) and the World Bank—serve as critical institutional anchors enforcing the hegemony of international finance across the developing world (Chimni, 1999, 2017). Through conditional structural adjustment programmes, bilateral investment treaties, and intellectual property regimes (TRIPS), global financial capital undermines national regulatory autonomy, forcing the privatisation of public assets and the commodification of essential social services.
-
-= The Transnational Capitalist Class, GVCs, and Dispossession
-
-This integrated regime of global finance has nurtured an identifiable *Transnational Capitalist Class* (TCC) operating on neoliberal principles. Under neoliberal orthodoxy, the deliberate curtailment of state intervention in domestic demand generation, agricultural price stabilization, and subsidized public procurement creates fertile ground for multinational corporations (MNCs) to accumulate through *accumulation by dispossession* (Harvey, 2007).
-
-Multinational conglomerates coordinate global production through vertical and horizontal integration, forming multi-tiered *Global Production Networks (GPNs)* and *Global Value Chains (GVCs)*:
-
-#align(center)[
-  #block(
-    width: 92%,
-    fill: rgb("#fefce8"),
-    inset: (x: 14pt, y: 10pt),
-    stroke: 0.5pt + rgb("#ca8a04"),
-    radius: 3pt
-  )[
-    #align(left)[
-      #text(weight: "bold", size: 9pt, fill: rgb("#854d0e"))[Corporate Concentration in Global Agri-Food Systems] \
-      #v(0.08cm)
-      #set text(size: 8.6pt, fill: rgb("#713f12"))
-      An Oxfam (2016) investigation (*Behind the Brands*) documented that just ten multinational food and beverage conglomerates—Associated British Foods (ABF), Coca-Cola, Danone, General Mills, Kellogg's, Mars, Mondelēz International, Nestlé, PepsiCo, and Unilever—collectively generate revenues of more than \$1.1 billion per day, commanding virtually all ubiquitous commercial consumer brands worldwide.
-    ]
-  ]
-]
-
-Furthermore, the concentration of global wealth has reached staggering proportions. Of the world's top 100 economic entities by revenue, 61 are multinational corporations, outstripping national governments (World Bank, 2015). Longitudinal assessments of global wealth by the World Bank (2018) demonstrate that while total global wealth expanded by 66% between 1995 and 2014 (from \$690 trillion to \$1,143 trillion in constant 2014 USD), per-capita wealth in high-income OECD economies was *52 times greater* than in low-income developing nations.
-
-In the Global South, corporate retail behemoths and agribusiness giants displace petty commodity traders and tenant farmers, inducing severe agrarian distress, land dispossession, and distress-induced rural-to-urban migration. The privatisation of essential public goods—healthcare, tertiary education, water, and electricity—further escalates the cost of social reproduction for working households.
-
-= Transformation of the Working Class: Informalisation and the "Precariat"
-
-These macro-structural processes have profoundly destabilised the traditional working class. In developing economies such as India, the proliferation of global corporate investments has conspicuously failed to generate proportionate formal employment. Instead, capital-intensive technologies and structural unbundling have catalyzed a massive expansion of *informal labour*.
-
-As Mark Anner (2015) documents, transnational lead firms enforce hyper-competitive cost pressures down multi-tiered subcontracting hierarchies. Subordinate local supplier firms, operating on razor-thin margins in the Global South, depress labour costs by avoiding statutory social security contributions, suppressing trade unionisation, and dividing the workforce into precarious contractual tiers.
-
-#align(center)[
-  #block(
-    width: 92%,
-    inset: (x: 14pt, y: 9pt),
-    stroke: (left: 2.5pt + rgb("#b91c1c"), rest: 0.5pt + rgb("#e5e7eb")),
-    fill: rgb("#fff5f5"),
-    radius: (right: 3pt)
-  )[
-    #align(left)[
-      #text(weight: "bold", size: 8.8pt, font: "Menlo", fill: rgb("#b91c1c"))[THE REPRODUCTION OF PRECARITY] \
-      #v(0.08cm)
-      #set text(size: 8.8pt, fill: rgb("#374151"))
-      Scholars such as Guy Standing (2011, 2014) argue that globalised neoliberal production has produced a distinct socio-economic grouping: the *Precariat* (the precarious proletariat). Defined by chronic job insecurity, lack of occupational identity, absence of employment-based safety nets, and systemic vulnerability to economic shocks, the precariat reflects the severe erosion of the post-war capital-labour compromise.
-    ]
-  ]
-]
-
-Whether the precariat constitutes a novel, autonomous class-in-itself or represents the contemporary, hyper-fragmented manifestation of the informal proletariat remains a vigorously debated question in contemporary political economy. What is undeniable is that *informalisation* is not an archaic, residual remnant of pre-capitalist traditionalism destined to vanish with economic modernization; rather, it is an actively reproduced, organic feature of global capitalism that strips workers of collective bargaining power and transfers systemic market risks directly onto individual labourers.
-
-= The Intermediate Strata: The New Middle Class in the Neoliberal Division of Labour
-
-Classical Marxist analysis recognised that capitalist society contains intermediate social layers that complicate the binary Bourgeoisie-Proletariat antagonism. Karl Kautsky (1910) in his exposition of the *Erfurt Program* identified the classical "old middle class" (*petite bourgeoisie*) as independent small producers, self-employed artisans, shopkeepers, and peasant farmers. 
-
-Under contemporary capitalism, this traditional intermediate stratum has been joined by a distinct *new middle class* (Poulantzas & Fernbach, 1975; Wright, 2009). This modern strata comprises:
-- Corporate managers, operational executives, and supervisors who exercise delegated authority over the labor process.
-- Salaried technocrats, financial analysts, corporate lawyers, IT professionals, and policy consultants.
-- Academics, journalists, and media intellectuals charged with ideological reproduction.
-
-This group occupies what Erik Olin Wright (2009) terms *contradictory class locations*. While they are wage earners who do not own the physical means of production, they possess substantial skills-based human capital, command delegated decision-making power, and participate in the appropriation of surplus value through performance bonuses, stock options, and high managerial remuneration. 
-
-Critics of the neoliberal order emphasize that this professional-managerial buffer functions to insulate the transnational capitalist class from direct working-class confrontation, preventing the formation of broad-based political solidarity between intermediate white-collar employees and informal wage workers.
-
-= Conclusion: The Persistence of Capital-Labour Antagonism
-
-From the food we consume and garments we wear to mobile telecommunications, digital applications, and mineral extraction, the commodities that populate daily life are produced through sprawling Global Value Chains controlled by transnational capital. At the opposite pole of these commodity networks stand millions of informal workers—construction labourers, gig delivery couriers, garment sweatshop workers, agricultural casual labourers, and domestic workers—who possess nothing to sell but their capacity to work.
-
-The institutional transformations of the twenty-first century—monopoly financialisation, supply chain subcontracting, state rollback, and structural informalisation—have not rendered the category of "class" obsolete. Rather, they have heightened the structural antagonism between capital and labour. In the Global South, the central challenge for progressive political economy remains deciphering how fragmented, informalised, and precarious working-class fractions can build collective counter-hegemonic power to challenge transnational capital in the contemporary era.
-
-#v(0.4cm)
-
-// --- REFERENCES ---
-#line(length: 100%, stroke: 0.5pt + rgb("#e5e7eb"))
-#v(0.15cm)
-
-#text(size: 11pt, weight: "bold", font: "Libertinus Serif", fill: rgb("#111827"))[References]
-
-#v(0.2cm)
-
-#set text(size: 8.2pt, fill: rgb("#374151"))
-#set par(justify: true, first-line-indent: -1.4em, hanging-indent: 1.4em, leading: 0.52em)
-
-#block(spacing: 0.35cm)[
+#block(spacing: 0.4cm)[
   Anner, M. (2015). Labor control regimes and worker resistance in global supply chains. *Labor History*, 56(3), 292–307.
 
-  Anderson, P. (1974). *Passages from Antiquity to Feudalism*. London: New Left Books.
+  Chimni, B. S. (1999). Marxism and international law: A contemporary analysis. *Economic and Political Weekly*, 337–349.
 
-  Chimni, B. S. (1999). Marxism and international law: A contemporary analysis. *Economic and Political Weekly*, 34(6), 337–349.
+  Chimni, B. S. (2017). International institutions today: an imperial global state in the making. In *Globalization and International Organizations* (pp. 41–78). Routledge.
 
-  Chimni, B. S. (2017). International institutions today: An imperial global state in the making. In *Globalization and International Organizations* (pp. 41–78). London: Routledge.
+  Harvey, D. (2007). *A Brief History of Neoliberalism*. Oxford University Press, USA.
 
-  Dobb, M. (1946). *Studies in the Development of Capitalism*. London: Routledge & Kegan Paul.
+  Kautsky, K. (1910). *The Class Struggle (Erfurt Program)* (No. 2). Chicago, Kerr.
 
-  Engels, F. (1884/1972). *The Origin of the Family, Private Property and the State*. New York: International Publishers.
+  Lenin, V. I. (1999). *Imperialism: The Highest Stage of Capitalism*. Resistance Books.
 
-  Harvey, D. (2007). *A Brief History of Neoliberalism*. Oxford: Oxford University Press.
+  Marx, K. & Engels, F. (1888), *Manifesto of the Communist Party*, (New York: New York Labor News, 1888), pp. 7–15, 28.
 
-  Hilton, R. (Ed.). (1976). *The Transition from Feudalism to Capitalism*. London: New Left Books.
+  Marx, K. (2018). *Capital Volume 1* (Vol. 1). Lulu.com.
 
-  Kautsky, K. (1910). *The Class Struggle (Erfurt Program)*. Chicago: Charles H. Kerr & Co.
+  Patnaik, P. (2010). Notes on contemporary imperialism. *Monthly Review*, 66(2).
 
-  Lenin, V. I. (1917/1999). *Imperialism: The Highest Stage of Capitalism*. Sydney: Resistance Books.
+  Poulantzas, N. A., & Fernbach, D. (1975). *Classes in Contemporary Capitalism* (pp. 13–16). London: NLB.
 
-  Marx, K., & Engels, F. (1848/1888). *Manifesto of the Communist Party*. (Authorized English trans. ed. by F. Engels). London: William Reeves.
+  Standing, G. (2014). The Precariat—The new dangerous class. *Amalgam*, 6(6–7), 115–119.
 
-  Marx, K. (1867/2018). *Capital: A Critique of Political Economy (Volume I)*. (Ben Fowkes, Trans.). London: Penguin Classics.
-
-  Morgan, L. H. (1877). *Ancient Society: Researches in the Lines of Human Progress from Savagery through Barbarism to Civilization*. New York: Henry Holt and Company.
-
-  Oxfam. (2016). *Behind the Brands: Food Justice and the "Big 10" Food and Beverage Companies*. Oxfam Briefing Paper. Oxford: Oxfam International.
-
-  Patnaik, P. (2010). Notes on contemporary imperialism. *Monthly Review*, 62(7), 40–54.
-
-  Poulantzas, N., & Fernbach, D. (1975). *Classes in Contemporary Capitalism*. London: New Left Books.
-
-  Standing, G. (2011). *The Precariat: The New Dangerous Class*. London: Bloomsbury Academic.
-
-  Standing, G. (2014). The precariat: The new dangerous class. *Amalgam*, 6(6–7), 115–119.
-
-  World Bank. (2015). *World Development Indicators 2015*. Washington, DC: World Bank Group.
-
-  World Bank. (2018). *The Changing Wealth of Nations 2018: Building a Sustainable Future*. (Lange, G.-M., Wodon, Q., & Carey, K., Eds.). Washington, DC: World Bank Group.
+  Tucker, R. C. (Ed.). (1978). *The Marx-Engels Reader*.
 
   Wright, E. O. (2009). Understanding class: Towards an integrated analytical approach. *New Left Review*, 60(1), 101–116.
 ]
