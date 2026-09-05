@@ -71,7 +71,6 @@
   #v(3.5pt)
   #text(size: 8.7pt, fill: primary-color)[
     #link("mailto:pradhan.ananya1994\@gmail.com")[pradhan.ananya1994\@gmail.com] #h(6pt)|#h(6pt)
-    +91-8130706869 #h(6pt)|#h(6pt)
     #link("https://ananya-econ.github.io")[ananya-econ.github.io] #h(6pt)|#h(6pt)
     #link("https://github.com/ananya-econ")[github.com/ananya-econ] #h(6pt)|#h(6pt)
     New Delhi / Noida, India
