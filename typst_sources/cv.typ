@@ -65,7 +65,7 @@
   #v(2pt)
   #text(size: 8.7pt, fill: secondary-color)[
     Research Associate, V.V. Giri National Labour Institute, Ministry of Labour & Employment, Govt. of India \
-    Researcher & Core Contributor, India Labour Observatory (#link("https://indialabourobservatory.com")[indialabourobservatory.com]) & Digital Labour Tech \
+    Research Contributor, PLFS Data Story (India Labour Observatory & Digital Labour Tech) \
     Alumna, Centre for Informal Sector and Labour Studies (CISLS), Jawaharlal Nehru University (JNU), New Delhi
   ] \
   #v(3.5pt)
@@ -82,29 +82,27 @@
 
 // ── PROFILE ──
 #cv-section("Profile & Research Agenda")
-Quantitative Development Economist and Labour Researcher with postgraduate degrees from Jawaharlal Nehru University (JNU) and Utkal University, UGC-NET qualified in Economics, with over *3 years of cumulative research experience* in empirical micro-econometrics, primary digital survey design (SurveyCTO, KoBoToolbox), automated Stata High-Frequency Check (HFC) data quality pipelines, and large-scale public data infrastructure. Co-developer and researcher at the *India Labour Observatory* (#link("https://indialabourobservatory.com")[indialabourobservatory.com]) alongside Abhinav Kumar, analyzing official survey microdata covering *1.15 million records* across 36 Indian states. Currently Research Associate at the *V.V. Giri National Labour Institute* (Ministry of Labour & Employment, Govt. of India), evaluating Digital Public Infrastructure (DPI, e-Shram), social security floors, Direct Benefit Transfers (DBT), and international labour governance across BRICS economies. Proven background leading multi-site CAPI field operations, administering gender-disaggregated household and worker surveys, and executing Oaxaca-Blinder wage decompositions on national microdata.
+Quantitative Development Economist and Labour Researcher with postgraduate degrees from Jawaharlal Nehru University (JNU) and Utkal University, UGC-NET qualified in Economics, with over *3 years of cumulative research experience* in empirical micro-econometrics, primary digital survey design (SurveyCTO, KoBoToolbox), automated Stata High-Frequency Check (HFC) data quality pipelines, and applied labour market research. Contributed empirical research to the PLFS 2024–25 data story _"India's Labour Market in 2025: Structural Cleavages, Gender Gaps, and the Educated Youth Paradox"_ (first published at #link("https://digitallabour.tech")[Digital Labour Tech] and featured on the #link("https://indialabourobservatory.com")[India Labour Observatory]). Currently Research Associate at the *V.V. Giri National Labour Institute* (Ministry of Labour & Employment, Govt. of India), evaluating Digital Public Infrastructure (DPI, e-Shram), social security floors, Direct Benefit Transfers (DBT), and international labour governance across BRICS economies. Proven background leading multi-site CAPI field operations, administering gender-disaggregated household and worker surveys, and executing Oaxaca-Blinder wage decompositions on national microdata.
 
 // ── RESEARCH INTERESTS ──
 #cv-section("Research Interests")
 #text(size: 9.1pt)[
   *Primary:* Empirical Labour Economics $dot$ Gender Wage Discrimination & Structural Cleavages $dot$ Informal & Platform Labour \
   *Policy & Governance:* Digital Public Infrastructure (DPI, e-Shram, DBT) $dot$ Social Protection Floors $dot$ BRICS Labour Regimes \
-  *Methods:* Applied Micro-econometrics (Oaxaca-Blinder, DiD) $dot$ Survey Engineering & CAPI $dot$ Automated Stata HFC Quality Pipelines
+  *Methods:* Applied Micro-econometrics (Oaxaca-Blinder) $dot$ Primary Field Surveys & CAPI $dot$ Automated Stata HFC Quality Pipelines
 ]
 
 // ── APPOINTMENTS ──
 #cv-section("Research & Professional Appointments")
 
 #cv-item(
-  "Researcher & Core Contributor",
-  "2024 -- Present",
+  "Research Contributor",
+  "2025",
   "India Labour Observatory & Digital Labour Tech",
   "New Delhi, India",
   [
-    - Co-developed open-access public research infrastructure analyzing *1,148,634 individual records* from the official Periodic Labour Force Survey (PLFS) across 36 Indian States and Union Territories with survey design multipliers and variance bounds.
-    - Co-authored the landmark study and visual story _"India's Labour Market in 2025: Structural Cleavages, Gender Gaps, and the Educated Youth Paradox"_, diagnosing the 39.1 pp gender participation wedge, graduate unemployment paradox (11.2%), and caste-stratified wage penalties.
-    - Built the *36-State Capability Atlas* and curated the *48-table PLFS Statistical Compendium* covering wages, industry classification, informal enterprise dynamics, and social security coverage.
-    - Contributed empirical analysis on platform work, algorithmic management, and gig worker regulation in the Global South for _Digital Labour Tech_ (#link("https://digitallabour.tech")[digitallabour.tech]).
+    - Contributed empirical analysis to the PLFS 2024--25 data story _"India's Labour Market in 2025: Structural Cleavages, Gender Gaps, and the Educated Youth Paradox"_, first published at #link("https://digitallabour.tech")[Digital Labour Tech] and featured on the #link("https://indialabourobservatory.com")[India Labour Observatory].
+    - Analyzed gender gaps in labour force participation, structural wage disparities, and youth unemployment patterns using Periodic Labour Force Survey unit-level microdata.
   ]
 )
 
@@ -160,8 +158,8 @@ Quantitative Development Economist and Labour Researcher with postgraduate degre
   ]
 )
 
-// ── PRIMARY FIELDWORK & SURVEY ENGINEERING ──
-#cv-section("Primary Fieldwork & Survey Engineering Experience")
+// ── PRIMARY FIELDWORK & SURVEY ADMINISTRATION ──
+#cv-section("Primary Fieldwork & Survey Administration Experience")
 
 #grid(
   columns: (1fr, 1fr),
@@ -196,24 +194,14 @@ Quantitative Development Economist and Labour Researcher with postgraduate degre
 #cv-item(
   "India's Labour Market in 2025: Structural Cleavages, Gender Gaps, and the Educated Youth Paradox",
   "2026",
-  "India Labour Observatory Research Series (with Abhinav Kumar)",
-  "indialabourobservatory.com",
+  "Data Story, Digital Labour Tech & India Labour Observatory (with Abhinav Kumar)",
+  "Research Publication",
   [
-    Comprehensive empirical analysis of the 2024--25 Periodic Labour Force Survey (1,148,634 observations). Details the 39.1 pp gender participation gap, the paradox of 11.2% graduate unemployment versus 0.3% uneducated unemployment, and structural segmentation by caste and religion. \
+    Empirical investigation of Periodic Labour Force Survey (PLFS 2024--25) microdata diagnosing structural gender participation gaps, educated youth unemployment, and social group wage disparities. First published at Digital Labour Tech and featured on the India Labour Observatory. \
     #link("https://indialabourobservatory.com/stories/indias-labour-market-in-2025/")[View Interactive Story & Data ↗]
   ]
 )
 
-#cv-item(
-  "Periodic Labour Force Survey (PLFS) 2024--25 Harmonized Microdata Corpus",
-  "2026",
-  "India Labour Observatory Open Research Infrastructure (with Abhinav Kumar)",
-  "Dataset Release",
-  [
-    Open-access harmonized unit-level microdata repository covering 1.15 million survey respondents across 36 States/UTs with survey design multipliers, sub-sample variance estimates, and automated cross-tabulation pipelines. \
-    #link("https://indialabourobservatory.com/stories/plfs-microdata-report-2024-25/full-report/")[View 48-Table Compendium & Data Engine ↗]
-  ]
-)
 
 #cv-item(
   "Global Value Chains in Extractive Industries: Mining, Labour Precarity, and Value Capture in Odisha",
@@ -325,46 +313,5 @@ Quantitative Development Economist and Labour Researcher with postgraduate degre
   [*Odia* (Native --- full professional proficiency in speaking, reading, and writing),    *English* (Bilingual --- academic writing and presentation proficiency),    *Hindi* (Professional working proficiency --- fluent field administration and translation),    *Bengali* (Working reading and speaking proficiency).]
 )
 
-// ── ACADEMIC REFERENCES ──
-#cv-section("Academic & Professional References")
-
-#grid(
-  columns: (1fr, 1fr, 1fr),
-  gutter: 14pt,
-  [
-    #block[
-      #text(weight: "bold")[Dr. Dhanya M.B] #linebreak()
-      #text(size: 8.3pt, fill: secondary-color)[
-        Fellow & Faculty Coordinator #linebreak()
-        V.V. Giri National Labour Institute #linebreak()
-        Ministry of Labour & Employment #linebreak()
-        Govt. of India, NOIDA #linebreak()
-        #link("mailto:dhanyamb.vvgnli@gov.in")[dhanyamb.vvgnli\@gov.in]
-      ]
-    ]
-  ],
-  [
-    #block[
-      #text(weight: "bold")[Dr. Minaketan Behera] #linebreak()
-      #text(size: 8.3pt, fill: secondary-color)[
-        Associate Professor of Economics #linebreak()
-        CISLS, School of Social Sciences #linebreak()
-        Jawaharlal Nehru University #linebreak()
-        New Delhi, India #linebreak()
-        #link("mailto:minaketan@mail.jnu.ac.in")[minaketan\@mail.jnu.ac.in]
-      ]
-    ]
-  ],
-  [
-    #block[
-      #text(weight: "bold")[Dr. Adarsh Kumar, PhD] #linebreak()
-      #text(size: 8.3pt, fill: secondary-color)[
-        Research Affiliate & Fellow #linebreak()
-        Friedrich Schiller University Jena #linebreak()
-        Germany #linebreak()
-        _Collaborator, Digital Labour Tech_ #linebreak()
-        #link("mailto:adarsh.kumar@uni-jena.de")[adarsh.kumar\@uni-jena.de]
-      ]
-    ]
-  ]
-)
+#v(10pt)
+#align(center)[#text(size: 8.5pt, fill: rgb("#78716c"))[_Academic and professional references available upon request._]]
