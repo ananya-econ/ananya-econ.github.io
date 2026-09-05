@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="50%" stop-color="#0f274a"/>
+      <stop offset="100%" stop-color="#091424"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="192" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="4"/>
+  
+  <!-- Outer Academic Ring -->
+  <circle cx="200" cy="200" r="176" fill="none" stroke="rgba(212, 175, 55, 0.45)" stroke-width="1.5" stroke-dasharray="4 4"/>
+  
+  <!-- Inner Fine Ring -->
+  <circle cx="200" cy="200" r="162" fill="none" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+
+  <!-- Monogram Initials AP -->
+  <text x="200" y="218" 
+        font-family="'Cormorant Garamond', 'Newsreader', Georgia, serif" 
+        font-size="132" 
+        font-weight="600" 
+        letter-spacing="4"
+        fill="url(#goldGrad)" 
+        text-anchor="middle"
+        dominant-baseline="central"
+        filter="url(#subtleGlow)">AP</text>
+
+  <!-- Subtitle Ribbon / Discipline -->
+  <text x="200" y="308" 
+        font-family="'JetBrains Mono', 'Inter', monospace" 
+        font-size="14" 
+        font-weight="600" 
+        letter-spacing="6" 
+        fill="#93c5fd" 
+        text-anchor="middle">DEVELOPMENT ECONOMICS</text>
+
+  <!-- Small Flourish Star -->
+  <polygon points="200,82 203,91 212,91 205,97 207,106 200,101 193,106 195,97 198,91 197,91" fill="url(#goldGrad)"/>
+</svg>
