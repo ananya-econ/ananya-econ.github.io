@@ -106,7 +106,7 @@ function initScrollSpy() {
 
 /* --- 4. Research Category Filtering --- */
 function initResearchFilter() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  const filterBtns = document.querySelectorAll('.filter-btn, .filter-pill');
   const paperCards = document.querySelectorAll('.paper-card');
 
   filterBtns.forEach(btn => {
@@ -140,14 +140,10 @@ function initAbstractToggles() {
       const isShowing = abstract.classList.contains('show');
       if (isShowing) {
         abstract.classList.remove('show');
-        btn.innerHTML = `
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          Read Abstract`;
+        btn.textContent = '[ Abstract ]';
       } else {
         abstract.classList.add('show');
-        btn.innerHTML = `
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
-          Hide Abstract`;
+        btn.textContent = '[ Close Abstract ]';
       }
     });
   });
@@ -161,7 +157,14 @@ function initBibtexDrawers() {
       const card = btn.closest('.paper-card');
       const drawer = card.querySelector('.bibtex-drawer');
       if (!drawer) return;
-      drawer.classList.toggle('show');
+      const isShowing = drawer.classList.contains('show');
+      if (isShowing) {
+        drawer.classList.remove('show');
+        btn.textContent = '[ BibTeX ]';
+      } else {
+        drawer.classList.add('show');
+        btn.textContent = '[ Close BibTeX ]';
+      }
     });
   });
 
