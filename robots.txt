@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ananya-econ.github.io/sitemap.xml

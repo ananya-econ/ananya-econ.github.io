@@ -1,13 +1,12 @@
 /**
- * Ananya Pradhan - Personal Academic Website & Portfolio
- * Client-side interactivity: theme toggling, research filtering, BibTeX copy, and modal gallery.
+ * Ananya Pradhan — Personal Academic Research Dossier
+ * Client-side script: Theme management, abstract toggles, BibTeX drawers, lightbox, and navigation.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initMobileNav();
   initScrollSpy();
-  initResearchFilter();
   initAbstractToggles();
   initBibtexDrawers();
   initLightbox();
@@ -17,9 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
 function initTheme() {
   const themeToggle = document.getElementById('theme-toggle');
   const storedTheme = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  
   const currentTheme = storedTheme || 'light';
+  
   document.documentElement.setAttribute('data-theme', currentTheme);
   updateThemeIcon(currentTheme);
 
@@ -39,7 +37,7 @@ function updateThemeIcon(theme) {
   if (!themeToggle) return;
   if (theme === 'dark') {
     themeToggle.innerHTML = `
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="5"></circle>
         <line x1="12" y1="1" x2="12" y2="3"></line>
         <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -53,7 +51,7 @@ function updateThemeIcon(theme) {
     themeToggle.setAttribute('aria-label', 'Switch to light theme');
   } else {
     themeToggle.innerHTML = `
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
       </svg>`;
     themeToggle.setAttribute('aria-label', 'Switch to dark theme');
@@ -104,37 +102,14 @@ function initScrollSpy() {
   }, { passive: true });
 }
 
-/* --- 4. Research Category Filtering --- */
-function initResearchFilter() {
-  const filterBtns = document.querySelectorAll('.filter-btn, .filter-pill');
-  const paperCards = document.querySelectorAll('.paper-card');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filter = btn.getAttribute('data-filter');
-
-      paperCards.forEach(card => {
-        const categories = card.getAttribute('data-category') || '';
-        if (filter === 'all' || categories.split(' ').includes(filter)) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-}
-
-/* --- 5. Abstract Expand/Collapse --- */
+/* --- 4. Abstract Expand/Collapse --- */
 function initAbstractToggles() {
   document.querySelectorAll('.btn-toggle-abstract').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      const card = btn.closest('.paper-card');
-      const abstract = card.querySelector('.paper-abstract');
+      const card = btn.closest('.paper-entry');
+      if (!card) return;
+      const abstract = card.querySelector('.paper-abstract-box');
       if (!abstract) return;
 
       const isShowing = abstract.classList.contains('show');
@@ -149,14 +124,16 @@ function initAbstractToggles() {
   });
 }
 
-/* --- 6. BibTeX Drawers & Clipboard Copy --- */
+/* --- 5. BibTeX Drawers & Clipboard Copy --- */
 function initBibtexDrawers() {
   document.querySelectorAll('.btn-toggle-bibtex').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      const card = btn.closest('.paper-card');
-      const drawer = card.querySelector('.bibtex-drawer');
+      const card = btn.closest('.paper-entry');
+      if (!card) return;
+      const drawer = card.querySelector('.bibtex-box');
       if (!drawer) return;
+      
       const isShowing = drawer.classList.contains('show');
       if (isShowing) {
         drawer.classList.remove('show');
@@ -168,7 +145,7 @@ function initBibtexDrawers() {
     });
   });
 
-  document.querySelectorAll('.bibtex-copy-btn').forEach(btn => {
+  document.querySelectorAll('.bibtex-copy-trigger').forEach(btn => {
     btn.addEventListener('click', () => {
       const code = btn.nextElementSibling ? btn.nextElementSibling.innerText : '';
       if (!code) return;
@@ -176,11 +153,9 @@ function initBibtexDrawers() {
       navigator.clipboard.writeText(code).then(() => {
         const originalText = btn.innerText;
         btn.innerText = '✓ Copied';
-        btn.style.color = 'var(--accent-teal)';
         showToast('BibTeX citation copied to clipboard');
         setTimeout(() => {
           btn.innerText = originalText;
-          btn.style.color = '';
         }, 2000);
       }).catch(err => {
         console.error('Failed to copy BibTeX: ', err);
@@ -189,7 +164,7 @@ function initBibtexDrawers() {
   });
 }
 
-/* --- 7. Lightbox Modal Gallery --- */
+/* --- 6. Lightbox Modal Gallery --- */
 function initLightbox() {
   const modal = document.getElementById('image-modal');
   const modalImg = document.getElementById('modal-img');
@@ -207,7 +182,7 @@ function initLightbox() {
       if (img) {
         modalImg.src = img.getAttribute('src');
         modalImg.alt = img.getAttribute('alt') || title;
-        modalCaption.innerHTML = `<strong>${title}</strong> — ${desc}`;
+        modalCaption.innerHTML = `<strong>${title}</strong> &mdash; ${desc}`;
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
       }
@@ -234,7 +209,7 @@ function initLightbox() {
   });
 }
 
-/* --- 8. Toast Feedback --- */
+/* --- 7. Toast Feedback --- */
 function showToast(message) {
   let toast = document.getElementById('toast');
   if (!toast) {
@@ -248,5 +223,5 @@ function showToast(message) {
   toast.classList.add('show');
   setTimeout(() => {
     toast.classList.remove('show');
-  }, 2600);
+  }, 2400);
 }
