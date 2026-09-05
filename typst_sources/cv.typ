@@ -1,6 +1,6 @@
 #set page(
   paper: "a4",
-  margin: (top: 1.5cm, bottom: 1.5cm, left: 1.8cm, right: 1.8cm),
+  margin: (top: 1.35cm, bottom: 1.35cm, left: 1.75cm, right: 1.75cm),
   footer: [
     #set text(size: 8.5pt, fill: rgb("#78716c"))
     #grid(
@@ -28,11 +28,11 @@
 #let accent-color = rgb("#991b1b")
 
 #let cv-section(title) = {
-  v(9pt)
+  v(8pt)
   text(font: ("Libertinus Serif", "Charter"), size: 11.2pt, weight: "bold", fill: primary-color, smallcaps(title))
   v(1.5pt)
   line(length: 100%, stroke: 0.8pt + primary-color)
-  v(3.5pt)
+  v(3pt)
 }
 
 #let cv-item(title, date, institution, location, details) = {
@@ -82,12 +82,14 @@
 
 // ── PROFILE ──
 #cv-section("Profile & Research Agenda")
-Quantitative Development Economist and Labour Researcher with postgraduate degrees from Jawaharlal Nehru University (JNU) and Utkal University, UGC-NET qualified in Economics, with over *5 years of cumulative experience* in empirical micro-econometrics, primary digital survey design (SurveyCTO, KoBoToolbox), automated Stata High-Frequency Check (HFC) data quality pipelines, and large-scale public data infrastructure. Co-developer and researcher at the *India Labour Observatory* (#link("https://indialabourobservatory.com")[indialabourobservatory.com]) alongside Abhinav Kumar, analyzing official survey microdata covering *1.15 million records* across 36 Indian states. Currently Research Associate at the *V.V. Giri National Labour Institute* (Ministry of Labour & Employment, Govt. of India), evaluating Digital Public Infrastructure (DPI, e-Shram), social security floors, Direct Benefit Transfers (DBT), and international labour governance across BRICS economies. Proven background leading multi-site CAPI field operations, administering gender-disaggregated household and worker surveys, and executing Oaxaca-Blinder wage decompositions on national microdata.
+Quantitative Development Economist and Labour Researcher with postgraduate degrees from Jawaharlal Nehru University (JNU) and Utkal University, UGC-NET qualified in Economics, with over *3 years of cumulative research experience* in empirical micro-econometrics, primary digital survey design (SurveyCTO, KoBoToolbox), automated Stata High-Frequency Check (HFC) data quality pipelines, and large-scale public data infrastructure. Co-developer and researcher at the *India Labour Observatory* (#link("https://indialabourobservatory.com")[indialabourobservatory.com]) alongside Abhinav Kumar, analyzing official survey microdata covering *1.15 million records* across 36 Indian states. Currently Research Associate at the *V.V. Giri National Labour Institute* (Ministry of Labour & Employment, Govt. of India), evaluating Digital Public Infrastructure (DPI, e-Shram), social security floors, Direct Benefit Transfers (DBT), and international labour governance across BRICS economies. Proven background leading multi-site CAPI field operations, administering gender-disaggregated household and worker surveys, and executing Oaxaca-Blinder wage decompositions on national microdata.
 
 // ── RESEARCH INTERESTS ──
 #cv-section("Research Interests")
 #text(size: 9.1pt)[
-  *Primary:* Empirical Labour Economics $dot$ Gender Wage Discrimination & Structural Cleavages $dot$ Informal & Platform Labour   *Policy & Governance:* Digital Public Infrastructure (DPI, e-Shram, DBT) $dot$ Social Protection Floors $dot$ BRICS Labour Regimes   *Methods:* Applied Micro-econometrics (Oaxaca-Blinder, DiD) $dot$ Survey Engineering & CAPI $dot$ Automated Stata HFC Quality Pipelines
+  *Primary:* Empirical Labour Economics $dot$ Gender Wage Discrimination & Structural Cleavages $dot$ Informal & Platform Labour \
+  *Policy & Governance:* Digital Public Infrastructure (DPI, e-Shram, DBT) $dot$ Social Protection Floors $dot$ BRICS Labour Regimes \
+  *Methods:* Applied Micro-econometrics (Oaxaca-Blinder, DiD) $dot$ Survey Engineering & CAPI $dot$ Automated Stata HFC Quality Pipelines
 ]
 
 // ── APPOINTMENTS ──
@@ -129,7 +131,7 @@ Quantitative Development Economist and Labour Researcher with postgraduate degre
   "Ghaziabad / Uttar Pradesh, India",
   [
     - *Project:* _Sustainability of Digital Jobs --- Assessing Youth Livelihood Opportunities in Uttar Pradesh_.
-    - Administered structured CAPI surveys via KoBoToolbox across geographically dispersed districts in Uttar Pradesh, managing data capture for 155+ respondents with gender-disaggregated modules on youth digital employment.
+    - Administered structured CAPI surveys via KoBoToolbox across geographically dispersed districts in Uttar Pradesh, managing data capture for 100+ respondents with gender-disaggregated modules on youth digital employment.
     - Implemented real-time daily data auditing and error correction protocols, maintaining zero sample attrition across survey waves.
     - Coordinated local district administrative clearances and respondent mobilization under strict research ethics protocols.
   ]
@@ -165,16 +167,28 @@ Quantitative Development Economist and Labour Researcher with postgraduate degre
   columns: (1fr, 1fr),
   gutter: 10pt,
   [
-    *Uttar Pradesh Youth Livelihoods (ICSSR, 2026)*     155+ structured CAPI interviews across multiple UP districts; youth digital skilling, platform livelihoods, and gender divides.     #v(2pt)
-    *Delhi NCR Platform Workers (JNU, 2024--25)*     60 in-depth surveys of gig/platform workers; algorithmic dispatching, wage deductions, and working-hour distributions.     #v(2pt)
-    *Munirka Urban Informal Workers (Delhi, 2018)*     35 structured interviews with informal workers (mess workers, security guards, domestic staff) assessing wage exploitation and living conditions.
+    *Uttar Pradesh Youth Livelihoods (ICSSR, 2026)* \
+    100+ structured CAPI interviews across multiple UP districts; youth digital skilling, platform livelihoods, and gender divides. \
+    #v(2pt)
+    *Delhi NCR Platform Workers (JNU, 2024--25)* \
+    60 in-depth surveys of gig/platform workers; algorithmic dispatching, wage deductions, and working-hour distributions. \
+    #v(2pt)
+    *Munirka Urban Informal Workers (Delhi, 2018)* \
+    35 structured interviews with informal workers (mess workers, security guards, domestic staff) assessing wage exploitation and living conditions.
   ],
   [
-    *Kalahandi & Niyamgiri Hills (Odisha, 2018)*     Participatory rural appraisal & interviews with Dongaria Kondh tribal households; tenurial rights, bauxite mining resistance, and forest economies.     #v(2pt)
-    *Kendrapara Women's SHGs (Odisha, 2016)*     Focus Group Discussions (FGDs) with women's micro-credit groups; agricultural credit linkages, bank linkage schemes, and debt cycles.     #v(2pt)
-    *Khamarsahi Village Caste & Labour Study (Odisha, 2016)*     Field research on Scheduled Caste agricultural labourers, documenting wage discrimination, tied labour, and social exclusion.
+    *Kalahandi & Niyamgiri Hills (Odisha, 2018)* \
+    Participatory rural appraisal & interviews with Dongaria Kondh tribal households; tenurial rights, bauxite mining resistance, and forest economies. \
+    #v(2pt)
+    *Kendrapara Women's SHGs (Odisha, 2016)* \
+    Focus Group Discussions (FGDs) with women's micro-credit groups; agricultural credit linkages, bank linkage schemes, and debt cycles. \
+    #v(2pt)
+    *Khamarsahi Village Caste & Labour Study (Odisha, 2016)* \
+    Field research on Scheduled Caste agricultural labourers; wage discrimination, tied labour, and social exclusion.
   ]
 )
+
+#pagebreak()
 
 // ── PUBLICATIONS & PAPERS ──
 #cv-section("Publications, Working Papers & Public Datasets")
@@ -185,7 +199,8 @@ Quantitative Development Economist and Labour Researcher with postgraduate degre
   "India Labour Observatory Research Series (with Abhinav Kumar)",
   "indialabourobservatory.com",
   [
-    Comprehensive empirical analysis of the 2024--25 Periodic Labour Force Survey (1,148,634 observations). Details the 39.1 pp gender participation gap, the paradox of 11.2% graduate unemployment versus 0.3% uneducated unemployment, and structural segmentation by caste and religion.     #link("https://indialabourobservatory.com/stories/indias-labour-market-in-2025/")[View Interactive Story & Data] #h(8pt)|#h(8pt) #link("https://ananya-econ.github.io/assets/papers/indias_labour_market_2025.pdf")[Download Working Paper PDF]
+    Comprehensive empirical analysis of the 2024--25 Periodic Labour Force Survey (1,148,634 observations). Details the 39.1 pp gender participation gap, the paradox of 11.2% graduate unemployment versus 0.3% uneducated unemployment, and structural segmentation by caste and religion. \
+    #link("https://indialabourobservatory.com/stories/indias-labour-market-in-2025/")[View Interactive Story & Data ↗]
   ]
 )
 
@@ -195,37 +210,50 @@ Quantitative Development Economist and Labour Researcher with postgraduate degre
   "India Labour Observatory Open Research Infrastructure (with Abhinav Kumar)",
   "Dataset Release",
   [
-    Open-access harmonized unit-level microdata repository covering 1.15 million survey respondents across 36 States/UTs with survey design multipliers, sub-sample variance estimates, and automated cross-tabulation pipelines.     #link("https://indialabourobservatory.com/stories/plfs-microdata-report-2024-25/full-report/")[View 48-Table Compendium & Data Engine]
+    Open-access harmonized unit-level microdata repository covering 1.15 million survey respondents across 36 States/UTs with survey design multipliers, sub-sample variance estimates, and automated cross-tabulation pipelines. \
+    #link("https://indialabourobservatory.com/stories/plfs-microdata-report-2024-25/full-report/")[View 48-Table Compendium & Data Engine ↗]
   ]
 )
 
 #cv-item(
   "Global Value Chains in Extractive Industries: Mining, Labour Precarity, and Value Capture in Odisha",
-  "2026",
-  "Working Paper / Writing Sample (Seminar Paper, CISLS, JNU --- Advised by Prof. Praveen Jha)",
-  "Typeset in Typst",
+  "2021",
+  "Working Paper (Seminar Paper, CISLS, JNU --- Advised by Prof. Praveen Jha)",
+  "Research Paper",
   [
-    Empirical political economy inquiry into transnational bauxite mining and alumina refining (Vedanta Limited) in Lanjigarh and Niyamgiri, Odisha. Draws on 35 semi-structured worker interviews, 5 FGDs, and Indian Bureau of Mines longitudinal data to analyze multi-tiered subcontracting, labour control regimes, and agrarian dispossession.     #link("https://ananya-econ.github.io/assets/papers/gvc_writing_sample.pdf")[Download Working Paper PDF]
+    Empirical political economy inquiry into transnational bauxite mining and alumina refining (Vedanta Limited) in Lanjigarh and Niyamgiri, Odisha. Draws on 35 semi-structured worker interviews, 5 FGDs, and Indian Bureau of Mines longitudinal data to analyze multi-tiered subcontracting, labour control regimes, and agrarian dispossession. \
+    #link("https://ananya-econ.github.io/assets/papers/gvc_writing_sample.pdf")[Download Working Paper PDF ↗]
   ]
 )
 
 #cv-item(
   "Gender-Based Wage Discrimination in India: An Oaxaca-Blinder Decomposition Analysis",
-  "2019 / 2026",
-  "M.A. Thesis & Empirical Working Note, CISLS, School of Social Sciences, JNU",
-  "PLFS Microdata",
+  "2019",
+  "M.A. Thesis, Centre for Informal Sector and Labour Studies (CISLS), JNU",
+  "New Delhi, India",
   [
-    Econometric decomposition using Periodic Labour Force Survey unit-level data in Stata and Python. Quantifies explained (endowments) versus unexplained (discrimination coefficient) components of the gender wage gap across formal and informal sectors, controlling for occupation, education, industry, and geography.     #link("https://ananya-econ.github.io/assets/papers/gender_wage_gap_oaxaca_blinder.pdf")[Download Econometric Methods Note PDF]
+    Econometric decomposition using Periodic Labour Force Survey unit-level data in Stata. Partitioned the male-female wage gap into explained human capital endowments and unexplained structural discrimination coefficients across formal salaried and informal casual employment.
   ]
 )
 
 #cv-item(
   "Caste System and Patterns of Discrimination in Rural Labour Markets",
-  "2026",
-  "Monograph / Empirical Working Paper",
-  "Typeset in Typst",
+  "2016",
+  "Field Research Monograph, Centre for Study of Discrimination and Exclusion (CSDE), JNU",
+  "Supervised by Prof. Y. Chinna Rao",
   [
-    Theoretical and empirical investigation linking neoclassical and statistical discrimination models (Becker, Arrow) to caste hierarchies in Indian agriculture, incorporating primary field interviews from Kendrapara, Odisha and JNU migrant workers.     #link("https://ananya-econ.github.io/assets/papers/caste_rural_labour_discrimination.pdf")[Download Working Paper PDF]
+    Empirical investigation of caste hierarchies, debt interlinkages, and agricultural wage discrimination among Scheduled Caste informal workers in Khamarsahi village, Kendrapara, Odisha.
+  ]
+)
+
+#cv-item(
+  "‘CLASS’: Theory of Class and Political Economy",
+  "2018",
+  "Course Assignment (IA-416), CIPOD / CISLS, Jawaharlal Nehru University",
+  "Submitted to Prof. Moushumi Basu",
+  [
+    Relational political economy analysis tracing class differentiation from primitive accumulation to contemporary international financial capital, transnational corporate monopolisation, and structural informalisation. \
+    #link("https://ananya-econ.github.io/assets/papers/class_political_economy.pdf")[Download Assignment PDF ↗]
   ]
 )
 
