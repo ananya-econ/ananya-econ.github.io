@@ -1,5 +1,5 @@
 #set document(
-  title: "Modes of Production, Globalisation, and Labour Processes: A Relational Political Economy Analysis",
+  title: "‘CLASS’: A Relational Political Economy Analysis",
   author: "Ananya Pradhan",
   date: none
 )
@@ -12,8 +12,8 @@
       #grid(
         columns: (1fr, auto),
         align: (left, right),
-        text(size: 8.5pt, fill: rgb("#6b7280"), font: "Libertinus Serif", style: "italic")[Ananya Pradhan · CISLS, Jawaharlal Nehru University],
-        text(size: 8.5pt, fill: rgb("#6b7280"), font: "Libertinus Serif")[Modes of Production, Globalisation, and Labour Processes]
+        text(size: 8.5pt, fill: rgb("#6b7280"), font: "Libertinus Serif", style: "italic")[Ananya Pradhan · CISLS, JNU],
+        text(size: 8.5pt, fill: rgb("#6b7280"), font: "Libertinus Serif")[‘CLASS’: A Relational Political Economy Analysis]
       )
       #v(0.2em)
       #line(length: 100%, stroke: 0.4pt + rgb("#d1d5db"))
@@ -43,22 +43,20 @@
 
 // --- HEADER BLOCK ---
 #align(center)[
-  #text(size: 9.2pt, tracking: 1.5pt, fill: rgb("#6b7280"), font: "Libertinus Serif")[POLITICAL ECONOMY #h(4pt)·#h(4pt) ESSAYS & WORKING NOTES] \
-  #v(0.25cm)
-  #text(size: 17pt, weight: "bold", font: "Libertinus Serif")[Modes of Production, Globalisation, and Labour Processes] \
-  #v(0.12cm)
+  #text(size: 20pt, weight: "bold", font: "Libertinus Serif")[‘CLASS’] \
+  #v(0.2cm)
   #text(size: 11.5pt, font: "Libertinus Serif", style: "italic", fill: rgb("#374151"))[A Relational Political Economy Analysis] \
   #v(0.35cm)
   #text(size: 11pt, weight: "bold", font: "Libertinus Serif")[Ananya Pradhan] \
   #v(0.1cm)
-  #text(size: 9.2pt, fill: rgb("#4b5563"), font: "Libertinus Serif")[
-    Centre for Informal Sector and Labour Studies (CISLS), School of Social Sciences \
-    Jawaharlal Nehru University, New Delhi · 2018
+  #text(size: 9.5pt, fill: rgb("#4b5563"), font: "Libertinus Serif")[
+    Centre for Informal Sector and Labour Studies (CISLS), Jawaharlal Nehru University \
+    Course: Political Economy (IA-416) · Advised by Prof. Moushumi Basu (2018)
   ]
   #v(0.35cm)
   #line(length: 100%, stroke: 0.5pt + rgb("#9ca3af"))
 ]
-#v(0.4cm)
+#v(0.3cm)
 
 
 #show heading.where(level: 1): it => block(

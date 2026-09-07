@@ -234,10 +234,10 @@ Quantitative Development Economist and Labour Researcher with postgraduate degre
 )
 
 #cv-item(
-  "Modes of Production, Globalisation, and Labour Processes: A Relational Political Economy Analysis",
+  "‘CLASS’: A Relational Political Economy Analysis",
   "2018",
-  "Working Paper / Academic Essay, CISLS, Jawaharlal Nehru University",
-  "New Delhi, India",
+  "CISLS, Jawaharlal Nehru University (Course: Political Economy --- Advised by Prof. Moushumi Basu)",
+  "Research Paper",
   [
     Relational political economy analysis tracing class differentiation from primitive accumulation to contemporary international financial capital, transnational corporate monopolisation, and structural informalisation. \
     #link("https://ananya-econ.github.io/assets/papers/class_political_economy.pdf")[Download Paper PDF ↗]
