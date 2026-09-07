@@ -236,8 +236,8 @@ Quantitative Development Economist and Labour Researcher with postgraduate degre
 #cv-item(
   "‘CLASS’: A Relational Political Economy Analysis",
   "2018",
-  "CISLS, Jawaharlal Nehru University (Course: Political Economy --- Advised by Prof. Moushumi Basu)",
-  "Research Paper",
+  "Centre for Informal Sector and Labour Studies (CISLS), Jawaharlal Nehru University",
+  "New Delhi, India",
   [
     Relational political economy analysis tracing class differentiation from primitive accumulation to contemporary international financial capital, transnational corporate monopolisation, and structural informalisation. \
     #link("https://ananya-econ.github.io/assets/papers/class_political_economy.pdf")[Download Paper PDF ↗]

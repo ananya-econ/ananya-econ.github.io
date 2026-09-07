@@ -51,7 +51,7 @@
   #v(0.1cm)
   #text(size: 9.5pt, fill: rgb("#4b5563"), font: "Libertinus Serif")[
     Centre for Informal Sector and Labour Studies (CISLS), Jawaharlal Nehru University \
-    Course: Political Economy (IA-416) · Advised by Prof. Moushumi Basu (2018)
+    New Delhi, India · 2018
   ]
   #v(0.35cm)
   #line(length: 100%, stroke: 0.5pt + rgb("#9ca3af"))
