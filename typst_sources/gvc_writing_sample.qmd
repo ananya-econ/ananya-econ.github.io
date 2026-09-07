@@ -6,6 +6,10 @@ author:
     affiliation: "Centre for Informal Sector and Labour Studies (CISLS), School of Social Sciences (SSS), Jawaharlal Nehru University (JNU)"
     email: "Course: Seminar Paper on Global Value Chains | Instructor: Prof. Praveen Jha"
 format:
+  typst:
+    number-sections: true
+    header-includes:
+      - '#set bibliography(title: "References", style: "apa")'
   pdf:
     documentclass: article
     geometry:
@@ -195,7 +199,3 @@ The mainstream developmental thesis that foreign capital investment in mineral e
 
 This study has shown that integration into extractive GVCs deepens labour vulnerability through structural mechanisms: the systematic degradation of agrarian livelihoods generates a localized reserve army of labour; a multi-tiered subcontracting hierarchy insulates lead firms from statutory liabilities; work shifts are unilaterally prolonged without overtime pay; and autonomous trade unionism is suppressed through the joint coercion of corporate management and the state apparatus. Consequently, extractive GVC integration does not foster human development; rather, it institutionalizes a deeply unequal structural relationship between global capital and peripheral labour at the resource frontier.
 
-# References {.unnumbered}
-
-::: {#refs}
-:::
