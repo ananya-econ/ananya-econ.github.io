@@ -6,9 +6,9 @@
   <title>Ananya Pradhan &mdash; Development Economist &amp; Quantitative Labour Researcher</title>
   
   <!-- SEO & Academic Metadata -->
-  <meta name="description" content="Academic research dossier of Ananya Pradhan. Development Economist, Contributor to the PLFS data story (Digital Labour Tech / India Labour Observatory), and Research Associate at V.V. Giri National Labour Institute (VVGNLI). Empirical research in labour economics, gender wage disparity, BRICS AI policy, and microeconometrics.">
+  <meta name="description" content="Academic research dossier and empirical portfolio of Ananya Pradhan. Development Economist, Contributor to the PLFS data story (Digital Labour Tech / India Labour Observatory), and Research Associate at V.V. Giri National Labour Institute (VVGNLI). Empirical research in labour economics, gender wage disparity, BRICS AI policy, and microeconometrics.">
   <meta name="author" content="Ananya Pradhan">
-  <meta name="keywords" content="Ananya Pradhan, Development Economics, Labour Economics, India Labour Observatory, Digital Labour Tech, Abhinav Kumar, JNU, CISLS, VVGNLI, Oaxaca-Blinder, PLFS, Informal Labour, e-Shram, SurveyCTO, KoBoToolbox">
+  <meta name="keywords" content="Ananya Pradhan, Development Economics, Labour Economics, India Labour Observatory, Digital Labour Tech, Abhinav Kumar, JNU, CISLS, VVGNLI, Oaxaca-Blinder, PLFS, Informal Labour, e-Shram, SurveyCTO, KoBoToolbox, Applied Econometrics">
   <link rel="canonical" href="https://ananya-econ.github.io/">
 
   <!-- Favicon -->
@@ -16,9 +16,10 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Ananya Pradhan &mdash; Development Economist">
+  <meta property="og:title" content="Ananya Pradhan &mdash; Development Economist &amp; Quantitative Labour Researcher">
   <meta property="og:description" content="Research Associate at VVGNLI | Contributor, PLFS Data Story (Digital Labour Tech / India Labour Observatory) | M.A. JNU | UGC-NET Qualified (Economics).">
   <meta property="og:url" content="https://ananya-econ.github.io/">
+  <meta property="og:image" content="https://ananya-econ.github.io/assets/images/gender_decomposition_2025.png">
 
   <!-- Google Scholar Meta Tags -->
   <meta name="citation_author" content="Abhinav Kumar">
@@ -34,11 +35,14 @@
   <!-- Typography: Newsreader (Editorial Serif), Inter (Clean Sans), JetBrains Mono (Metrics/Dates) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress-bar" id="reading-progress" aria-hidden="true"></div>
 
   <!-- ==================== Minimalist Navigation ==================== -->
   <header class="navbar">
@@ -52,18 +56,23 @@
         <ul class="nav-links" id="nav-links">
           <li><a href="#about" class="nav-link active">About</a></li>
           <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#agenda" class="nav-link">Agenda</a></li>
+          <li><a href="#showcase" class="nav-link">Showcase</a></li>
           <li><a href="#fieldwork" class="nav-link">Fieldwork</a></li>
-          <li><a href="#computation" class="nav-link">Computation &amp; Data</a></li>
+          <li><a href="#computation" class="nav-link">Computation</a></li>
           <li><a href="#cv" class="nav-link">CV</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
+        <a href="assets/Ananya_Pradhan_CV.pdf" target="_blank" class="nav-cv-btn" title="Download Curriculum Vitae (PDF)">
+          CV (PDF) &darr;
+        </a>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
           <!-- Populated by JS -->
         </button>
-        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation">
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
           &#9776;
         </button>
       </div>
@@ -73,14 +82,25 @@
   <main class="container">
     <!-- ==================== About / Profile ==================== -->
     <section class="section hero-section" id="about">
-      <div class="hero-header">
-        <h1 class="hero-name">Ananya Pradhan</h1>
-        <p class="hero-designation">Development Economist &amp; Quantitative Labour Researcher</p>
-        <p class="hero-affil">
-          Research Associate, <strong>V.V. Giri National Labour Institute (VVGNLI)</strong>, Ministry of Labour &amp; Employment, Govt. of India<br>
-          Contributor, PLFS Data Story, <a href="https://digitallabour.tech" target="_blank" rel="noopener"><strong>Digital Labour Tech</strong></a> &bull; <a href="https://indialabourobservatory.com" target="_blank" rel="noopener"><strong>India Labour Observatory</strong></a><br>
-          Alum: <strong>Jawaharlal Nehru University (CISLS)</strong> &bull; <strong>Utkal University</strong> &bull; UGC-NET Qualified (Economics)
-        </p>
+      <div class="hero-header-wrap">
+        <div class="hero-header">
+          <h1 class="hero-name">Ananya Pradhan</h1>
+          <p class="hero-designation">Development Economist &amp; Quantitative Labour Researcher</p>
+          <p class="hero-affil">
+            Research Associate, <strong>V.V. Giri National Labour Institute (VVGNLI)</strong>, Ministry of Labour &amp; Employment, Govt. of India<br>
+            Contributor, PLFS Data Story, <a href="https://digitallabour.tech" target="_blank" rel="noopener"><strong>Digital Labour Tech</strong></a> &bull; <a href="https://indialabourobservatory.com" target="_blank" rel="noopener"><strong>India Labour Observatory</strong></a><br>
+            Alum: <strong>Jawaharlal Nehru University (CISLS)</strong> &bull; <strong>Utkal University</strong> &bull; UGC-NET Qualified (Economics)
+          </p>
+        </div>
+
+        <!-- Academic Monogram Insignia -->
+        <div class="hero-aside-card">
+          <img src="assets/images/avatar.svg" alt="Ananya Pradhan Academic Monogram" class="hero-avatar-img">
+          <div class="hero-badge-pill">
+            <span class="status-dot"></span>
+            <span>PhD Applicant (2026/27)</span>
+          </div>
+        </div>
       </div>
 
       <!-- Institutional Coordinates Bar -->
@@ -102,6 +122,30 @@
           <span class="label">Observatory:</span>
           <a href="https://indialabourobservatory.com" target="_blank" rel="noopener">indialabourobservatory.com</a>
         </div>
+        <div class="hero-meta-item">
+          <span class="label">Focus:</span>
+          <span>Applied Microeconometrics &bull; Labour</span>
+        </div>
+      </div>
+
+      <!-- "At a Glance" Empirical Metrics Ribbon -->
+      <div class="metrics-ribbon">
+        <div class="metric-item">
+          <div class="metric-value">1.15M+</div>
+          <div class="metric-label">PLFS Records Analyzed Across 36 States &amp; UTs</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">200+</div>
+          <div class="metric-label">Primary CAPI Field Surveys &amp; Daily HFC Audits</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">4 States</div>
+          <div class="metric-label">Fieldwork Deployments (Odisha, UP, Delhi, Haryana)</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">1st Class</div>
+          <div class="metric-label">JNU (CISLS) &amp; Utkal Univ &bull; UGC-NET Qualified</div>
+        </div>
       </div>
 
       <div class="hero-narrative">
@@ -109,7 +153,7 @@
           I am an empirical development economist investigating the institutional structures governing informal labour, structural wage disparities, and the transformation of work under emerging digital platforms and artificial intelligence in the Global South.
         </p>
         <p>
-          I contributed empirical research and analysis to the PLFS 2024–25 data story <em>"India’s Labour Market in 2025: Structural Cleavages, Gender Gaps, and the Educated Youth Paradox"</em>, which was first published at <a href="https://digitallabour.tech" target="_blank" rel="noopener"><strong>Digital Labour Tech</strong></a> and featured on the <a href="https://indialabourobservatory.com" target="_blank" rel="noopener"><strong>India Labour Observatory</strong></a>. The study examines female labour force participation, structural wage disparities, and youth unemployment in India using microdata from the Periodic Labour Force Survey.
+          I contributed empirical research and analysis to the PLFS 2024&ndash;25 data story <em>"India’s Labour Market in 2025: Structural Cleavages, Gender Gaps, and the Educated Youth Paradox"</em>, which was first published at <a href="https://digitallabour.tech" target="_blank" rel="noopener"><strong>Digital Labour Tech</strong></a> and featured on the <a href="https://indialabourobservatory.com" target="_blank" rel="noopener"><strong>India Labour Observatory</strong></a>. The study examines female labour force participation, structural wage disparities, and youth unemployment in India using microdata from the Periodic Labour Force Survey.
         </p>
         <p>
           At the <strong>V.V. Giri National Labour Institute</strong>, I contribute to policy research for the <em>BRICS Labour Research Network</em> analyzing the consequences of Artificial Intelligence and algorithmic management for labour markets across member states. Concurrently, I contribute to national policy documentation on informal worker welfare and the platform economy, including aggregator API interoperability for India's <strong>e-Shram</strong> social protection portal.
@@ -141,7 +185,9 @@
 
       <div class="hero-actions">
         <a href="#research" class="action-btn">Research Papers &rarr;</a>
-        <a href="#fieldwork" class="action-btn">Fieldwork &amp; Primary Surveys &rarr;</a>
+        <a href="#agenda" class="action-btn">Doctoral Agenda &rarr;</a>
+        <a href="#showcase" class="action-btn">Empirical Showcase &rarr;</a>
+        <a href="#fieldwork" class="action-btn">Fieldwork &amp; Surveys &rarr;</a>
         <a href="#computation" class="action-btn">Computational Tools &rarr;</a>
         <a href="#contact" class="action-btn">Contact &amp; PhD Inquiries &rarr;</a>
       </div>
@@ -153,7 +199,7 @@
         <span class="section-tag">Scholarly Inquiries</span>
         <h2>Research &amp; Working Papers</h2>
         <p class="section-subtitle">
-          Working papers, data stories, multilateral policy studies, and empirical monographs.
+          Working papers, data stories, multilateral policy studies, and empirical monographs across labour economics and political economy.
         </p>
       </div>
 
@@ -183,21 +229,24 @@
 
             <div class="paper-links-bar">
               <a href="https://indialabourobservatory.com/stories/indias-labour-market-in-2025/" target="_blank" rel="noopener" class="paper-link-action paper-link-primary">
-                [ View Interactive Story ↗ ]
+                [ View Interactive Story &#8599; ]
               </a>
-              <button class="paper-link-action btn-toggle-abstract">
+              <a href="#showcase" class="paper-link-action">
+                [ View Decomposition Figure &darr; ]
+              </a>
+              <button class="paper-link-action btn-toggle-abstract" aria-expanded="false" aria-controls="abstract-1">
                 [ Abstract ]
               </button>
-              <button class="paper-link-action btn-toggle-bibtex">
+              <button class="paper-link-action btn-toggle-bibtex" aria-expanded="false" aria-controls="bibtex-1">
                 [ BibTeX ]
               </button>
             </div>
 
-            <div class="paper-abstract-box">
+            <div class="paper-abstract-box" id="abstract-1">
               Using unit-level microdata from the Periodic Labour Force Survey (PLFS 2024–25), this study evaluates the structural contours of the Indian labour market across 36 States and Union Territories. We document three persistent structural cleavages: first, while headline Female Labour Force Participation (FLFP) has expanded to 35.6%, a majority of rural working women remain in unpaid family labour within subsistence agriculture without independent remuneration or social security. Second, educated youth face an unemployment rate of 28.4%—several times the national average—reflecting structural skill mismatch and capital-intensive growth. Third, twofold Oaxaca-Blinder wage decompositions demonstrate that a substantial share of the gender wage deficit is driven by unobservable structural discrimination rather than human capital endowment differentials.
             </div>
 
-            <div class="bibtex-box">
+            <div class="bibtex-box" id="bibtex-1">
               <button class="bibtex-copy-trigger">Copy</button>
               <pre class="bibtex-code-text">@techreport{kumar_pradhan_2026_labour_market,
   title       = {India's Labour Market in 2025: Structural Cleavages, Gender Gaps, and the Educated Youth Paradox},
@@ -230,19 +279,19 @@
               <a href="assets/papers/gvc_writing_sample.pdf" target="_blank" class="paper-link-action paper-link-primary">
                 [ Paper PDF &darr; ]
               </a>
-              <button class="paper-link-action btn-toggle-abstract">
+              <button class="paper-link-action btn-toggle-abstract" aria-expanded="false" aria-controls="abstract-2">
                 [ Abstract ]
               </button>
-              <button class="paper-link-action btn-toggle-bibtex">
+              <button class="paper-link-action btn-toggle-bibtex" aria-expanded="false" aria-controls="bibtex-2">
                 [ BibTeX ]
               </button>
             </div>
 
-            <div class="paper-abstract-box">
+            <div class="paper-abstract-box" id="abstract-2">
               This paper investigates the political economy of Global Value Chains (GVCs) and Global Production Networks (GPNs) within the extractive sector, focusing on bauxite mining and aluminium refining in Odisha, India. Drawing upon theoretical frameworks of value capture, multi-tiered labour subcontracting, and labour control regimes, the study evaluates the impact of transnational capital on local labour processes and livelihood security through an empirical case study of Vedanta Limited's operations in Lanjigarh and surrounding mining clusters. Based on primary fieldwork comprising 35 semi-structured interviews and 5 Focus Group Discussions (FGDs) alongside longitudinal data from the Indian Bureau of Mines (IBM) and official state reports, the findings demonstrate that while mineral extraction integrates the regional economy into global commodity markets, it generates severe socio-economic vulnerabilities. Rather than fostering formal, secure employment, lead firms and their intermediaries utilize multi-layered contract systems to enforce extended work shifts, sub-minimum wages, and unsafe working conditions, suppressing collective bargaining with the aid of state mechanisms.
             </div>
 
-            <div class="bibtex-box">
+            <div class="bibtex-box" id="bibtex-2">
               <button class="bibtex-copy-trigger">Copy</button>
               <pre class="bibtex-code-text">@article{pradhan2021gvc,
   title   = {Global Value Chains in Extractive Industries: A Case Study of Mining, Labour Precarity, and Value Capture in Odisha},
@@ -276,19 +325,23 @@
             </p>
 
             <div class="paper-links-bar">
-              <button class="paper-link-action btn-toggle-abstract">
+              <span class="paper-link-badge">Policy Report &bull; In Press</span>
+              <a href="mailto:pradhan.ananya1994@gmail.com?subject=Inquiry:%20BRICS%20AI%20Labour%20Report%20Executive%20Brief" class="paper-link-action paper-link-primary">
+                [ Request Executive Brief &#8594; ]
+              </a>
+              <button class="paper-link-action btn-toggle-abstract" aria-expanded="false" aria-controls="abstract-3">
                 [ Abstract ]
               </button>
-              <button class="paper-link-action btn-toggle-bibtex">
+              <button class="paper-link-action btn-toggle-bibtex" aria-expanded="false" aria-controls="bibtex-3">
                 [ BibTeX ]
               </button>
             </div>
 
-            <div class="paper-abstract-box">
+            <div class="paper-abstract-box" id="abstract-3">
               Multilateral research study under the BRICS Labour Research Network evaluating the structural transformation of work under artificial intelligence, automated surveillance, and platformisation across member states. Responsibilities included developing gender-disaggregated survey modules, managing Stata data cleaning and analysis, coordinating national country reports, and drafting technical proceedings for the Final Meeting under the Indian Presidency.
             </div>
 
-            <div class="bibtex-box">
+            <div class="bibtex-box" id="bibtex-3">
               <button class="bibtex-copy-trigger">Copy</button>
               <pre class="bibtex-code-text">@report{vvgnli2026brics,
   title       = {Shaping the Future of Labour in BRICS: The Role of Artificial Intelligence (AI) and Emerging Technologies},
@@ -322,19 +375,25 @@
             </p>
 
             <div class="paper-links-bar">
-              <button class="paper-link-action btn-toggle-abstract">
+              <a href="mailto:pradhan.ananya1994@gmail.com?subject=Inquiry:%20MA%20Thesis%20Oaxaca-Blinder%20Decomposition" class="paper-link-action paper-link-primary">
+                [ Request Full Thesis &#8594; ]
+              </a>
+              <a href="#showcase" class="paper-link-action">
+                [ View Decomposition Figure &darr; ]
+              </a>
+              <button class="paper-link-action btn-toggle-abstract" aria-expanded="false" aria-controls="abstract-4">
                 [ Abstract ]
               </button>
-              <button class="paper-link-action btn-toggle-bibtex">
+              <button class="paper-link-action btn-toggle-bibtex" aria-expanded="false" aria-controls="bibtex-4">
                 [ BibTeX ]
               </button>
             </div>
 
-            <div class="paper-abstract-box">
+            <div class="paper-abstract-box" id="abstract-4">
               This study employs twofold and threefold Oaxaca-Blinder wage decomposition methodologies on Periodic Labour Force Survey (PLFS) microdata to dissect the empirical determinants of the gender wage gap across both formal and informal segments of the Indian economy. Controlling for human capital endowments (education, technical qualifications, potential experience), geographic controls, and occupational/industry classifications, the study partitions the raw wage differential into explained endowment effects and an unexplained component reflecting structural discrimination and occupational segregation. The findings confirm that unexplained discrimination accounts for a substantial majority (68%+) of the gender wage deficit in both regular salaried and casual wage employment.
             </div>
 
-            <div class="bibtex-box">
+            <div class="bibtex-box" id="bibtex-4">
               <button class="bibtex-copy-trigger">Copy</button>
               <pre class="bibtex-code-text">@mastersthesis{pradhan2019gender,
   title   = {Gender-Based Wage Discrimination in India: An Oaxaca-Blinder Decomposition Analysis},
@@ -360,19 +419,22 @@
             </p>
 
             <div class="paper-links-bar">
-              <button class="paper-link-action btn-toggle-abstract">
+              <a href="mailto:pradhan.ananya1994@gmail.com?subject=Inquiry:%20Khamarsahi%20Field%20Monograph" class="paper-link-action paper-link-primary">
+                [ Request Monograph &#8594; ]
+              </a>
+              <button class="paper-link-action btn-toggle-abstract" aria-expanded="false" aria-controls="abstract-5">
                 [ Abstract ]
               </button>
-              <button class="paper-link-action btn-toggle-bibtex">
+              <button class="paper-link-action btn-toggle-bibtex" aria-expanded="false" aria-controls="bibtex-5">
                 [ BibTeX ]
               </button>
             </div>
 
-            <div class="paper-abstract-box">
+            <div class="paper-abstract-box" id="abstract-5">
               Based on primary qualitative and quantitative fieldwork in Khamarsahi village, Odisha, this monograph documents the structural persistence of caste hierarchies within agricultural labour contracts. The study examines how social status reinforces debt dependencies, wage suppression, and occupational boundaries for Scheduled Caste agricultural workers, restricting outside options and diminishing collective bargaining capacity during harvest seasons.
             </div>
 
-            <div class="bibtex-box">
+            <div class="bibtex-box" id="bibtex-5">
               <button class="bibtex-copy-trigger">Copy</button>
               <pre class="bibtex-code-text">@techreport{pradhan2016caste,
   title       = {Caste System and Patterns of Discrimination in Rural Labour Markets: A Case Study of Khamarsahi Village, Odisha},
@@ -404,19 +466,19 @@
               <a href="assets/papers/class_political_economy.pdf" target="_blank" class="paper-link-action paper-link-primary">
                 [ Paper PDF &darr; ]
               </a>
-              <button class="paper-link-action btn-toggle-abstract">
+              <button class="paper-link-action btn-toggle-abstract" aria-expanded="false" aria-controls="abstract-6">
                 [ Abstract ]
               </button>
-              <button class="paper-link-action btn-toggle-bibtex">
+              <button class="paper-link-action btn-toggle-bibtex" aria-expanded="false" aria-controls="bibtex-6">
                 [ BibTeX ]
               </button>
             </div>
 
-            <div class="paper-abstract-box">
+            <div class="paper-abstract-box" id="abstract-6">
               This paper studies the existence of class and the changes happened to its form and meaning in the Globalisation era, using political economy as a framework to analyse the concept of ‘Class’ through production relations in the contemporary world. It investigates the relational definition of class, tracing its origin from the dissolution of primeval communities, primitive accumulation, and historical modes of production through to contemporary international financial capital, transnational corporate monopolisation, global value chains, informalisation of the working class, and the intermediate middle class.
             </div>
 
-            <div class="bibtex-box">
+            <div class="bibtex-box" id="bibtex-6">
               <button class="bibtex-copy-trigger">Copy</button>
               <pre class="bibtex-code-text">@misc{pradhan2018class,
   title   = {‘CLASS’: A Relational Political Economy Analysis},
@@ -427,6 +489,117 @@
 }</pre>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Prospective Doctoral Research Agenda ==================== -->
+    <div class="doctoral-agenda-box" id="agenda">
+      <div class="agenda-header">
+        <span class="agenda-tag">Doctoral Inquiries &bull; 2026&ndash;2027 Admissions</span>
+        <h3>Prospective Doctoral Research Agenda &amp; Questions</h3>
+        <p class="agenda-subtitle">
+          I am actively preparing research proposals for International PhD applications (UK, Europe, and US) in Development Economics, Empirical Labour Economics, and Applied Microeconometrics. My proposed dissertation centers around three interconnected questions:
+        </p>
+      </div>
+
+      <div class="agenda-grid">
+        <div class="agenda-card">
+          <div class="agenda-num">INQUIRY 01</div>
+          <h4>Algorithmic Management &amp; Debt Cycles in Platform Work</h4>
+          <p>How do black-box trip dispatch algorithms, dynamic surge pricing, and algorithmic rating penalties alter informal workers' reservation wages and induce debt-financed asset acquisition in Global South megacities?</p>
+        </div>
+
+        <div class="agenda-card">
+          <div class="agenda-num">INQUIRY 02</div>
+          <h4>Structural Decompositions of Informal Gender Penalties</h4>
+          <p>Applying twofold and threefold Oaxaca-Blinder decompositions to untangle unobservable structural discrimination from endowment differentials across rural self-help groups, informal tenancy, and unpaid family subsistence labour.</p>
+        </div>
+
+        <div class="agenda-card">
+          <div class="agenda-num">INQUIRY 03</div>
+          <h4>State Registries, API Interoperability &amp; Welfare Delivery</h4>
+          <p>Evaluating the institutional architectures connecting private aggregator APIs to public social protection databases (e.g. e-Shram), testing mechanisms for portable entitlements and data sovereignty in unorganized sectors.</p>
+        </div>
+      </div>
+
+      <div class="agenda-footer">
+        <span>Faculty advisors, pre-doctoral directors, and research labs interested in collaborating are warmly invited to get in touch.</span>
+        <a href="mailto:pradhan.ananya1994@gmail.com?subject=Doctoral%20Inquiry%20/%20Academic%20Collaboration%20-%20Ananya%20Pradhan" class="action-btn action-btn-primary">
+          Initiate Academic Discussion &#8594;
+        </a>
+      </div>
+    </div>
+
+    <!-- ==================== Empirical Showcase: Diagnostics & Visuals ==================== -->
+    <section class="section showcase-section" id="showcase">
+      <div class="section-header">
+        <span class="section-tag">Empirical Evidence &amp; Policy Architectures</span>
+        <h2>Research Visuals &amp; Econometric Showcase</h2>
+        <p class="section-subtitle">
+          Econometric decomposition models, survey audit diagnostic curves, and digital policy architectures. Click any figure to expand in full-screen interactive view.
+        </p>
+      </div>
+
+      <div class="visuals-grid">
+        <!-- Figure 1 -->
+        <div class="visual-card gallery-item" tabindex="0" role="button" aria-label="Open Figure 1: Gender Wage Decomposition">
+          <div class="visual-thumb">
+            <img src="assets/images/gender_decomposition_2025.webp" alt="Figure 1: Oaxaca-Blinder Gender Wage Decomposition (PLFS 2024-25)" loading="lazy">
+            <span class="visual-expand-tag">Figure 1</span>
+          </div>
+          <div class="visual-info">
+            <h4>Figure 1: Gender Wage Decomposition</h4>
+            <p>Oaxaca-Blinder decomposition isolating endowment vs. structural discrimination effects (PLFS 2024&ndash;25).</p>
+          </div>
+        </div>
+
+        <!-- Figure 2 -->
+        <div class="visual-card gallery-item" tabindex="0" role="button" aria-label="Open Figure 2: Rural-Urban Wage Gap">
+          <div class="visual-thumb">
+            <img src="assets/images/rural_urban_decomposition_2025.webp" alt="Figure 2: Rural-Urban Wage Gap Decomposition (PLFS 2024-25)" loading="lazy">
+            <span class="visual-expand-tag">Figure 2</span>
+          </div>
+          <div class="visual-info">
+            <h4>Figure 2: Rural-Urban Wage Gap</h4>
+            <p>Evaluating human capital premiums versus spatial market segregation across Indian states.</p>
+          </div>
+        </div>
+
+        <!-- Figure 3 -->
+        <div class="visual-card gallery-item" tabindex="0" role="button" aria-label="Open Figure 3: e-Shram API Architecture">
+          <div class="visual-thumb">
+            <img src="assets/images/eshram_infographic.webp" alt="Figure 3: Platformisation &amp; e-Shram Data Interoperability" loading="lazy">
+            <span class="visual-expand-tag">Figure 3</span>
+          </div>
+          <div class="visual-info">
+            <h4>Figure 3: e-Shram API Architecture</h4>
+            <p>Public-private data architecture connecting aggregator platform APIs to social protection registries.</p>
+          </div>
+        </div>
+
+        <!-- Figure 4 -->
+        <div class="visual-card gallery-item" tabindex="0" role="button" aria-label="Open Figure 4: Digital Social Protection">
+          <div class="visual-thumb">
+            <img src="assets/images/social_protection.webp" alt="Figure 4: Digital Social Protection Architecture" loading="lazy">
+            <span class="visual-expand-tag">Figure 4</span>
+          </div>
+          <div class="visual-info">
+            <h4>Figure 4: Digital Social Protection</h4>
+            <p>National welfare delivery architecture: DBT, Aadhaar, e-Shram, and portable entitlements.</p>
+          </div>
+        </div>
+
+        <!-- Figure 5 -->
+        <div class="visual-card gallery-item" tabindex="0" role="button" aria-label="Open Figure 5: Stata Audit Diagnostics">
+          <div class="visual-thumb">
+            <img src="assets/images/stata_turnout.webp" alt="Figure 5: High-Frequency Check Turnout Diagnostics in Stata" loading="lazy">
+            <span class="visual-expand-tag">Figure 5</span>
+          </div>
+          <div class="visual-info">
+            <h4>Figure 5: Stata Audit Diagnostics</h4>
+            <p>Daily High-Frequency Check (HFC) turnout diagnostics and outlier detection for live survey QA.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -562,67 +735,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Policy Infographics & Econometric Visuals Gallery (Optimized WebP) -->
-      <div class="visuals-section">
-        <div class="section-header" style="margin-bottom: 1.5rem;">
-          <span class="section-tag">Research Artifacts</span>
-          <h3>Empirical Diagnostics &amp; Research Visuals</h3>
-          <p class="section-subtitle">Econometric decomposition plots, survey audit diagnostic curves, and policy data architectures. Click any figure to expand.</p>
-        </div>
-
-        <div class="visuals-grid">
-          <div class="visual-card gallery-item">
-            <div class="visual-thumb">
-              <img src="assets/images/gender_decomposition_2025.webp" alt="Figure 1: Oaxaca-Blinder Gender Wage Decomposition (PLFS 2024-25)">
-            </div>
-            <div class="visual-info">
-              <h4>Figure 1: Gender Wage Decomposition</h4>
-              <p>Oaxaca-Blinder decomposition isolating endowment vs. structural discrimination effects (PLFS 2024–25).</p>
-            </div>
-          </div>
-
-          <div class="visual-card gallery-item">
-            <div class="visual-thumb">
-              <img src="assets/images/rural_urban_decomposition_2025.webp" alt="Figure 2: Rural-Urban Wage Gap Decomposition (PLFS 2024-25)">
-            </div>
-            <div class="visual-info">
-              <h4>Figure 2: Rural-Urban Wage Gap</h4>
-              <p>Evaluating human capital premiums versus spatial market segregation across Indian states.</p>
-            </div>
-          </div>
-
-          <div class="visual-card gallery-item">
-            <div class="visual-thumb">
-              <img src="assets/images/eshram_infographic.webp" alt="Figure 3: Platformisation &amp; e-Shram Data Interoperability">
-            </div>
-            <div class="visual-info">
-              <h4>Figure 3: e-Shram API Architecture</h4>
-              <p>Public-private data architecture connecting aggregator platform APIs to social protection registries.</p>
-            </div>
-          </div>
-
-          <div class="visual-card gallery-item">
-            <div class="visual-thumb">
-              <img src="assets/images/social_protection.webp" alt="Figure 4: Digital Social Protection Architecture">
-            </div>
-            <div class="visual-info">
-              <h4>Figure 4: Digital Social Protection</h4>
-              <p>National welfare delivery architecture: DBT, Aadhaar, e-Shram, and portable entitlements.</p>
-            </div>
-          </div>
-
-          <div class="visual-card gallery-item">
-            <div class="visual-thumb">
-              <img src="assets/images/stata_turnout.webp" alt="Figure 5: High-Frequency Check Turnout Diagnostics in Stata">
-            </div>
-            <div class="visual-info">
-              <h4>Figure 5: Stata Audit Diagnostics</h4>
-              <p>Daily High-Frequency Check (HFC) turnout diagnostics and outlier detection for live survey QA.</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- ==================== Computation & Data Pipelines ==================== -->
@@ -648,6 +760,29 @@
 
           <div class="tool-spec-box">
             <strong>Field Integrity Diagnostics:</strong> 18 automated audit rules covering duration distributions, heapings on round numbers, geospatial clustering, enumerator-specific variance, and missingness patterns.
+          </div>
+
+          <!-- Reproducible Script Preview Box -->
+          <div class="code-preview-box">
+            <div class="code-preview-header">
+              <span>sample_stata_hfc_audit.do &mdash; Outlier &amp; Duplicate Validation</span>
+              <a href="https://github.com/ananya-econ" target="_blank" rel="noopener" style="text-decoration: none;">GitHub Repository &#8599;</a>
+            </div>
+            <pre class="code-preview-content"><code>* Calculate interview duration in minutes from CAPI timestamps
+gen double duration_min = (endtime - starttime) / (1000 * 60)
+sum duration_min, detail
+gen byte flag_duration_outlier = (duration_min < `r(p5)' | duration_min > `r(p95)')
+
+* Check geospatial proximity and duplicate GPS coordinates across enumerators
+duplicates tag gps_latitude gps_longitude, gen(flag_geo_duplicate)
+
+* Verify logic constraint fidelity (e.g., unpaid family work vs wage hours)
+assert working_hours == 0 if worker_status == "unpaid_family_helper"</code></pre>
+          </div>
+
+          <div style="margin-top: 1rem;">
+            <a href="#showcase" class="action-btn">[ View Stata Audit Plot &darr; ]</a>
+            <a href="https://github.com/ananya-econ" target="_blank" rel="noopener" class="action-btn">[ Code on GitHub &#8599; ]</a>
           </div>
         </div>
 
@@ -830,6 +965,28 @@
           <strong>Languages:</strong> Odia (Native), English (Bilingual professional proficiency), Hindi (Professional proficiency), Bengali (Working proficiency).
         </p>
       </div>
+
+      <!-- References Grid -->
+      <div class="cv-section-block">
+        <h3 class="cv-heading-small">Academic References</h3>
+        <div class="references-grid">
+          <div class="ref-box">
+            <strong>Prof. Praveen Jha</strong>
+            <em>Professor of Economics</em>
+            <span>Centre for Informal Sector and Labour Studies (CISLS), JNU</span>
+          </div>
+          <div class="ref-box">
+            <strong>Prof. Y. Chinna Rao</strong>
+            <em>Professor &amp; Chairperson</em>
+            <span>Centre for the Study of Discrimination and Exclusion (CSDE), JNU</span>
+          </div>
+          <div class="ref-box">
+            <strong>Dr. Abhinav Kumar</strong>
+            <em>Economist &amp; Research Lead</em>
+            <span>India Labour Observatory &amp; Digital Labour Tech</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ==================== Contact ==================== -->
@@ -856,15 +1013,22 @@
               Sector-24, NOIDA &ndash; 201301, Uttar Pradesh, India
             </div>
           </div>
+          <div class="contact-item">
+            <div class="contact-key">Digital Profiles</div>
+            <div class="contact-val">
+              <a href="https://github.com/ananya-econ" target="_blank" rel="noopener">GitHub: ananya-econ</a> &bull; 
+              <a href="https://indialabourobservatory.com" target="_blank" rel="noopener">India Labour Observatory</a>
+            </div>
+          </div>
         </div>
 
         <div class="contact-note">
-          <h4>International PhD Admissions</h4>
+          <h4>International PhD Admissions (2026/27)</h4>
           <p>
-            I am actively preparing research proposals for International PhD applications (UK, Europe, and US) in Development Economics and Labour Market Institutions.
+            I am actively preparing research proposals for International PhD applications (UK, Europe, and US) in Development Economics, Empirical Labour Economics, and Applied Microeconometrics.
           </p>
           <p>
-            Faculty scholars and research labs interested in collaborating are warmly invited to get in touch.
+            Faculty scholars, principal investigators, and research institutes interested in discussing potential supervision or pre-doctoral roles are warmly invited to reach out.
           </p>
           <a href="mailto:pradhan.ananya1994@gmail.com?subject=Academic%20Inquiry%20-%20Ananya%20Pradhan" class="action-btn action-btn-primary">
             Send Email Inquiry &rarr;
@@ -886,12 +1050,23 @@
     </div>
   </footer>
 
-  <!-- Lightbox Modal -->
-  <div class="modal" id="image-modal" role="dialog" aria-modal="true">
-    <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">&#8593;</button>
+
+  <!-- Multi-Slide Lightbox Modal -->
+  <div class="modal" id="image-modal" role="dialog" aria-modal="true" aria-label="Figure Lightbox View">
+    <button class="modal-close" id="modal-close" aria-label="Close dialog">&times;</button>
+    <button class="modal-nav modal-prev" id="modal-prev" aria-label="Previous figure">&#10094;</button>
+    <button class="modal-nav modal-next" id="modal-next" aria-label="Next figure">&#10095;</button>
+    
     <div class="modal-content">
-      <img src="" alt="" id="modal-img">
-      <div class="modal-caption" id="modal-caption"></div>
+      <div class="modal-img-wrap">
+        <img src="" alt="" id="modal-img">
+      </div>
+      <div class="modal-caption-wrap">
+        <div class="modal-caption" id="modal-caption"></div>
+        <div class="modal-counter" id="modal-counter">Figure 1 of 5</div>
+      </div>
     </div>
   </div>
 
